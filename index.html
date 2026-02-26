@@ -3,19 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mission Control — NEM Brand</title>
+  <title>Mission Control v3 — NEM Brand</title>
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
   <header>
-    <h1>Mission Control — NEM Brand</h1>
-    <p>CEO-Überblick in &lt;60s · Commercial + Execution + Agent Team</p>
+    <h1>Mission Control v3 — NEM Brand</h1>
+    <p>Executive Command Center · Overview · Agents · ERP · CRM</p>
   </header>
 
   <main>
     <nav class="tabs">
       <button class="tab active" data-tab="overview">Übersicht</button>
-      <button class="tab" data-tab="agents">Agent Team (The Office)</button>
+      <button class="tab" data-tab="agents">Agent Team</button>
+      <button class="tab" data-tab="erp">ERP</button>
+      <button class="tab" data-tab="crm">CRM</button>
     </nav>
 
     <section id="tab-overview" class="tab-panel active">
@@ -54,9 +56,55 @@
         <h2>Was das Agent-Team gerade abwickelt</h2>
         <div id="agentCards" class="agent-grid"></div>
       </section>
+
+      <section class="panel">
+        <h2>Agent KPI Scorecards (The Office)</h2>
+        <div id="agentKpiCards" class="agent-kpi-grid"></div>
+      </section>
+    </section>
+
+    <section id="tab-erp" class="tab-panel">
+      <section class="cards" id="erpAlertCards"></section>
+
+      <section class="panel">
+        <h2>Inventory Control</h2>
+        <div class="toolbar" id="erpFilterButtons"></div>
+        <table>
+          <thead>
+            <tr><th>SKU</th><th>Produkt</th><th>Stock</th><th>Reorder Point</th><th>Status</th><th>Wert</th></tr>
+          </thead>
+          <tbody id="inventoryRows"></tbody>
+        </table>
+      </section>
+
+      <section class="panel">
+        <h2>Purchase / Orders Board</h2>
+        <div id="poBoard" class="board-grid"></div>
+      </section>
+    </section>
+
+    <section id="tab-crm" class="tab-panel">
+      <section class="cards" id="crmMetricCards"></section>
+
+      <section class="panel">
+        <h2>Lead Pipeline Stages</h2>
+        <div id="crmPipeline" class="board-grid"></div>
+      </section>
+
+      <section class="split-grid">
+        <section class="panel">
+          <h2>Next Actions (Heute)</h2>
+          <ul id="nextActionsList"></ul>
+        </section>
+
+        <section class="panel">
+          <h2>Top Opportunities</h2>
+          <div id="topOpportunities"></div>
+        </section>
+      </section>
     </section>
   </main>
 
-  <script src="./app.js?v=3"></script>
+  <script src="./app.js?v=3.1"></script>
 </body>
 </html>

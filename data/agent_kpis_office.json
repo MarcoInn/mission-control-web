@@ -1,0 +1,56 @@
+[
+  {
+    "role":"CFO",
+    "agent":"Oscar Martinez",
+    "kpis":[
+      {"name":"Cash Burn vs Plan","value":"-3.1%","status":"gruen"},
+      {"name":"Gross Margin","value":"57.4%","status":"gruen"},
+      {"name":"DSO","value":"41 Tage","status":"gelb"}
+    ]
+  },
+  {
+    "role":"CMO",
+    "agent":"Kelly Kapoor",
+    "kpis":[
+      {"name":"CAC","value":"92 EUR","status":"gelb"},
+      {"name":"MQL→SQL","value":"34%","status":"gruen"},
+      {"name":"Campaign ROAS","value":"3.4x","status":"gruen"}
+    ]
+  },
+  {
+    "role":"COO",
+    "agent":"Dwight Schrute",
+    "kpis":[
+      {"name":"OTIF Delivery","value":"94%","status":"gruen"},
+      {"name":"Order Cycle Time","value":"3.2d","status":"gelb"},
+      {"name":"Fulfillment Error Rate","value":"1.7%","status":"gruen"}
+    ]
+  },
+  {
+    "role":"CRO",
+    "agent":"Jim Halpert",
+    "kpis":[
+      {"name":"Pipeline Coverage","value":"3.1x","status":"gruen"},
+      {"name":"Win Rate","value":"23%","status":"gelb"},
+      {"name":"Forecast Accuracy","value":"89%","status":"gruen"}
+    ]
+  },
+  {
+    "role":"Content",
+    "agent":"Pam Beesly",
+    "kpis":[
+      {"name":"Content Velocity","value":"18 assets/w","status":"gruen"},
+      {"name":"Organic Lead Share","value":"28%","status":"gelb"},
+      {"name":"Brief-to-Publish","value":"2.1d","status":"gruen"}
+    ]
+  },
+  {
+    "role":"Compliance",
+    "agent":"Toby Flenderson",
+    "kpis":[
+      {"name":"Open Findings","value":"4","status":"gelb"},
+      {"name":"Policy Coverage","value":"96%","status":"gruen"},
+      {"name":"Critical Incident","value":"1","status":"rot"}
+    ]
+  }
+]

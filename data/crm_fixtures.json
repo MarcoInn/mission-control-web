@@ -1,0 +1,24 @@
+{
+  "pipeline": [
+    {"stage":"new","count":42,"value":75600},
+    {"stage":"contacted","count":31,"value":62300},
+    {"stage":"call","count":24,"value":51700},
+    {"stage":"booked","count":17,"value":43300},
+    {"stage":"proposal","count":13,"value":38900},
+    {"stage":"won","count":8,"value":24500},
+    {"stage":"lost","count":5,"value":14800}
+  ],
+  "nextActionsToday": [
+    {"time":"08:45","owner":"Jim","task":"Follow-up Call: VitalCore Retail","priority":"hoch"},
+    {"time":"09:30","owner":"Kelly","task":"Proposal Versand: BetterYou DACH","priority":"hoch"},
+    {"time":"11:00","owner":"CRO Desk","task":"Reaktivierung 12 Cold Leads","priority":"mittel"},
+    {"time":"13:15","owner":"Jim","task":"Demo Booking: FitNatur Group","priority":"hoch"},
+    {"time":"16:00","owner":"SDR Team","task":"Lost-Reason Cleanup Q1","priority":"niedrig"}
+  ],
+  "topOpportunities": [
+    {"account":"VitalCore Retail","stage":"proposal","owner":"Jim","value":12500,"probability":65},
+    {"account":"BetterYou DACH","stage":"booked","owner":"Kelly","value":9800,"probability":58},
+    {"account":"FitNatur Group","stage":"call","owner":"Jim","value":8600,"probability":45},
+    {"account":"NordHealth Partners","stage":"contacted","owner":"CRO Desk","value":7900,"probability":35}
+  ]
+}

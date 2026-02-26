@@ -1,0 +1,24 @@
+{
+  "inventory": [
+    {"sku":"NEM-BASE-001","name":"Base Formula 500g","stock":1120,"reorderPoint":700,"status":"healthy","unitCost":8.2},
+    {"sku":"NEM-OMEGA-240","name":"Omega Blend 240ct","stock":280,"reorderPoint":400,"status":"stockout_risk","unitCost":12.5},
+    {"sku":"NEM-PROBIO-090","name":"Probiotic 90ct","stock":920,"reorderPoint":300,"status":"overstock_risk","unitCost":9.1},
+    {"sku":"NEM-COLL-300","name":"Collagen Plus 300g","stock":540,"reorderPoint":500,"status":"watch","unitCost":11.4},
+    {"sku":"NEM-MAG-120","name":"Magnesium Night 120ct","stock":860,"reorderPoint":450,"status":"healthy","unitCost":6.8},
+    {"sku":"NEM-D3K2-060","name":"D3+K2 60ct","stock":190,"reorderPoint":320,"status":"stockout_risk","unitCost":4.7},
+    {"sku":"NEM-IRON-060","name":"Iron Balance 60ct","stock":720,"reorderPoint":280,"status":"healthy","unitCost":5.3},
+    {"sku":"NEM-GUT-180","name":"Gut Support 180ct","stock":1340,"reorderPoint":600,"status":"overstock_risk","unitCost":10.2}
+  ],
+  "purchaseOrders": [
+    {"po":"PO-2026-118","supplier":"BioRaw GmbH","sku":"NEM-OMEGA-240","qty":1500,"eta":"2026-03-01","status":"in_transit"},
+    {"po":"PO-2026-119","supplier":"Nordic Labs","sku":"NEM-D3K2-060","qty":2000,"eta":"2026-02-29","status":"awaiting_approval"},
+    {"po":"PO-2026-120","supplier":"NutraCaps EU","sku":"NEM-COLL-300","qty":900,"eta":"2026-03-04","status":"ordered"},
+    {"po":"PO-2026-121","supplier":"ProBio Source","sku":"NEM-PROBIO-090","qty":400,"eta":"2026-03-11","status":"on_hold"},
+    {"po":"PO-2026-122","supplier":"BottleWorks","sku":"NEM-BASE-001","qty":2500,"eta":"2026-03-06","status":"received"}
+  ],
+  "alerts": [
+    {"type":"stockout_risk","title":"Stockout Risk","description":"2 SKUs unter Reorder Point innerhalb der nächsten 7 Tage.","severity":"rot"},
+    {"type":"overstock_risk","title":"Overstock Risk","description":"2 SKUs >120% Zielbestand; Kapitalbindung erhöht.","severity":"gelb"},
+    {"type":"cashflow","title":"Cashflow Exposure","description":"Gebundener Warenwert in Überbestand: 22.2k EUR.","severity":"gelb"}
+  ]
+}
