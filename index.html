@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mission Control</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Mission Control</h1>
+    <p>CEO-Überblick in &lt;60s</p>
+  </header>
+
+  <main>
+    <section class="cards" id="kpiCards"></section>
+
+    <section class="panel">
+      <h2>Task Tower</h2>
+      <div class="toolbar">
+        <label>Status:
+          <select id="statusFilter">
+            <option value="all">Alle</option>
+          </select>
+        </label>
+      </div>
+      <table>
+        <thead>
+          <tr><th>ID</th><th>Titel</th><th>Status</th><th>Priorität</th><th>Owner</th><th>Due</th></tr>
+        </thead>
+        <tbody id="taskRows"></tbody>
+      </table>
+    </section>
+
+    <section class="panel" id="risksPanel">
+      <h2>Top Risiken / Eskalation</h2>
+      <ul id="riskList"></ul>
+    </section>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
