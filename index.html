@@ -3,41 +3,60 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mission Control</title>
+  <title>Mission Control — NEM Brand</title>
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
   <header>
-    <h1>Mission Control</h1>
-    <p>CEO-Überblick in &lt;60s</p>
+    <h1>Mission Control — NEM Brand</h1>
+    <p>CEO-Überblick in &lt;60s · Commercial + Execution + Agent Team</p>
   </header>
 
   <main>
-    <section class="cards" id="kpiCards"></section>
+    <nav class="tabs">
+      <button class="tab active" data-tab="overview">Übersicht</button>
+      <button class="tab" data-tab="agents">Agent Team (The Office)</button>
+    </nav>
 
-    <section class="panel">
-      <h2>Task Tower</h2>
-      <div class="toolbar">
-        <label>Status:
-          <select id="statusFilter">
-            <option value="all">Alle</option>
-          </select>
-        </label>
-      </div>
-      <table>
-        <thead>
-          <tr><th>ID</th><th>Titel</th><th>Status</th><th>Priorität</th><th>Owner</th><th>Due</th></tr>
-        </thead>
-        <tbody id="taskRows"></tbody>
-      </table>
+    <section id="tab-overview" class="tab-panel active">
+      <section class="panel">
+        <h2>NEM Commercial Cockpit</h2>
+        <div class="cards" id="commercialCards"></div>
+      </section>
+
+      <section class="cards" id="kpiCards"></section>
+
+      <section class="panel">
+        <h2>Task Tower</h2>
+        <div class="toolbar">
+          <label>Status:
+            <select id="statusFilter">
+              <option value="all">Alle</option>
+            </select>
+          </label>
+        </div>
+        <table>
+          <thead>
+            <tr><th>ID</th><th>Titel</th><th>Status</th><th>Priorität</th><th>Owner</th><th>Due</th></tr>
+          </thead>
+          <tbody id="taskRows"></tbody>
+        </table>
+      </section>
+
+      <section class="panel" id="risksPanel">
+        <h2>Top Risiken / Eskalation</h2>
+        <ul id="riskList"></ul>
+      </section>
     </section>
 
-    <section class="panel" id="risksPanel">
-      <h2>Top Risiken / Eskalation</h2>
-      <ul id="riskList"></ul>
+    <section id="tab-agents" class="tab-panel">
+      <section class="panel">
+        <h2>Was das Agent-Team gerade abwickelt</h2>
+        <div id="agentCards" class="agent-grid"></div>
+      </section>
     </section>
   </main>
 
-  <script src="./app.js?v=2"></script>
+  <script src="./app.js?v=3"></script>
 </body>
 </html>

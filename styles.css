@@ -1,1 +1,20 @@
-body{font-family:Inter,Arial,sans-serif;background:#0f172a;color:#e2e8f0;margin:0}header{padding:20px 24px;border-bottom:1px solid #334155}h1{margin:0}main{padding:16px 24px;display:grid;gap:16px}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}.card{background:#111827;border:1px solid #334155;border-radius:12px;padding:12px}.kpi-name{font-size:13px;color:#94a3b8}.kpi-value{font-size:26px;font-weight:700}.badge{display:inline-block;padding:2px 8px;border-radius:999px;font-size:12px}.gruen{background:#14532d}.gelb{background:#713f12}.rot{background:#7f1d1d}.panel{background:#111827;border:1px solid #334155;border-radius:12px;padding:12px}.toolbar{margin-bottom:8px}table{width:100%;border-collapse:collapse}th,td{padding:8px;border-bottom:1px solid #334155;text-align:left;font-size:13px}
+body{font-family:Inter,Arial,sans-serif;background:#0f172a;color:#e2e8f0;margin:0}
+header{padding:20px 24px;border-bottom:1px solid #334155}
+h1{margin:0}
+main{padding:16px 24px;display:grid;gap:16px}
+.tabs{display:flex;gap:8px}
+.tab{background:#111827;border:1px solid #334155;color:#cbd5e1;padding:8px 12px;border-radius:10px;cursor:pointer}
+.tab.active{background:#1d4ed8;color:#fff;border-color:#1d4ed8}
+.tab-panel{display:none;gap:16px}
+.tab-panel.active{display:grid}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.card{background:#111827;border:1px solid #334155;border-radius:12px;padding:12px}
+.kpi-name{font-size:13px;color:#94a3b8}.kpi-value{font-size:26px;font-weight:700}
+.badge{display:inline-block;padding:2px 8px;border-radius:999px;font-size:12px}
+.gruen{background:#14532d}.gelb{background:#713f12}.rot{background:#7f1d1d}
+.panel{background:#111827;border:1px solid #334155;border-radius:12px;padding:12px}
+.toolbar{margin-bottom:8px}table{width:100%;border-collapse:collapse}
+th,td{padding:8px;border-bottom:1px solid #334155;text-align:left;font-size:13px}
+.agent-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px}
+.agent-card{background:#0b1220;border:1px solid #334155;border-radius:10px;padding:10px}
+.agent-role{font-size:12px;color:#94a3b8}.agent-task{font-size:14px;margin-top:6px}
