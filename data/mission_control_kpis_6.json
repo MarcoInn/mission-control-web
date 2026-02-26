@@ -1,0 +1,8 @@
+[
+  {"kpi_id":"KPI-01","name":"Planerfüllung Heute","einheit":"%","ist_wert":82,"zielwert":85,"warnschwelle":70,"ampel":"gelb","owner":"Delivery Lead"},
+  {"kpi_id":"KPI-02","name":"Liefertermintreue","einheit":"%","ist_wert":91,"zielwert":90,"warnschwelle":80,"ampel":"gruen","owner":"PMO"},
+  {"kpi_id":"KPI-03","name":"Blocker-Alter Median","einheit":"Tage","ist_wert":3,"zielwert":2,"warnschwelle":4,"ampel":"gelb","owner":"Head of Operations"},
+  {"kpi_id":"KPI-04","name":"Kritische Risiken offen","einheit":"Anzahl","ist_wert":6,"zielwert":3,"warnschwelle":5,"ampel":"rot","owner":"Programmleitung"},
+  {"kpi_id":"KPI-05","name":"Kapazitätsauslastung","einheit":"%","ist_wert":88,"zielwert":85,"warnschwelle":65,"ampel":"gruen","owner":"Team Leads"},
+  {"kpi_id":"KPI-06","name":"Business-Impact realisiert","einheit":"EUR","ist_wert":18500,"zielwert":20000,"warnschwelle":14000,"ampel":"gelb","owner":"Business Owner"}
+]

@@ -1,5 +1,5 @@
-const KPI_URL = '../fixtures/mission_control_kpis_6.json';
-const TASK_URL = '../fixtures/mission_control_demo_tasks_10.json';
+const KPI_URL = './data/mission_control_kpis_6.json';
+const TASK_URL = './data/mission_control_demo_tasks_10.json';
 
 const kpiCards = document.getElementById('kpiCards');
 const taskRows = document.getElementById('taskRows');
