@@ -90,3 +90,56 @@
 
 ### 5) Next iteration trigger
 If CTR < 1.2% after first paid test window, iterate only hook line (keep body + CTA constant) with two new first 2-second variants.
+
+---
+
+## Cycle 2026-03-03 23:33 UTC — Selected Format: LP Section Visual (MOF → BOF bridge)
+
+**Goal:** Design one high-clarity landing page visual block that increases trust + click-through to product detail without medical claims.
+
+### 1) Two solution approaches (free/open-first)
+
+### Approach A — "Routine Timeline" (3-step visual strip)
+- **Production stack (free/open):** Figma free + Pexels/Unsplash lifestyle base + brand color overlays.
+- **Section concept:** Horizontal 3-step strip: **Morning setup → Midday consistency → Evening done-list check**.
+- **Headline:** "Klarheit beginnt mit einer konsistenten Routine."
+- **Support line:** "AURANEM begleitet deinen Alltag – Schritt für Schritt."
+- **CTA:** "Routine starten"
+- **Visual style:** Clean icons + one authentic lifestyle frame per step, generous white space.
+- **Compliance-safe angle:** consistency and daily structure; no outcome guarantees.
+
+### Approach B — "Desk Reality Split" (problem/solution vertical split)
+- **Production stack (free/open):** Canva free + open-source icon set (Heroicons) + custom gradient masks.
+- **Section concept:** Left panel "Chaos-Moment" (overloaded desk), right panel "Routine-Moment" (same desk, simplified + AURANEM beside water).
+- **Headline:** "Weniger Reibung im Alltag."
+- **Support line:** "Mit einer klaren Morgenroutine triffst du bessere Tagesentscheidungen."
+- **CTA:** "Mehr erfahren"
+- **Visual style:** Strong left/right contrast, subtle motion cue arrows (for future web animation).
+- **Compliance-safe angle:** everyday clarity framing, no disease or cure language.
+
+### 2) Scorecard comparison
+
+| Metric | Approach A (Routine Timeline) | Approach B (Desk Reality Split) |
+| :--- | :--- | :--- |
+| **Hook** | 7/10 — calmer but less dramatic | 9/10 — immediate contrast effect |
+| **Readability** | 9/10 — structured sequence, easy scan | 8/10 — clear, but split layout adds cognitive load |
+| **Authenticity** | 8/10 — realistic routine moments | 7/10 — risk of staged "before/after" look |
+| **Brand Fit** | 9/10 — premium clarity + routine anchor | 8/10 — good fit but more performance-ad vibe |
+| **CTA** | 8/10 — direct action language | 8/10 — clear, slightly generic |
+| **TOTAL** | **41/50** | **40/50** |
+
+### 3) Decision
+- **Winner kept:** Approach A — "Routine Timeline" (**41/50**)
+- **Loser archived:** Approach B — "Desk Reality Split" (**40/50**)
+- **Why loser lost:** Strong hook but slightly lower authenticity and higher visual friction for LP scanning; timeline better supports trust-building and conversion flow.
+
+### 4) Compliance and constraints check
+- Free/open-first tools used in concepting ✅
+- Supplement-safe language (no cure/disease/guarantee) ✅
+- Anti-slideshow intent preserved (single coherent section narrative) ✅
+- No external publishing performed ✅
+
+### 5) Next iteration trigger
+If LP section CTR to product detail stays < 2.0% over 500 sessions, test a new headline pair while keeping visual structure fixed:
+1) "Routine statt Chaos" vs
+2) "Mehr Klarheit in deinem Tagesablauf".
