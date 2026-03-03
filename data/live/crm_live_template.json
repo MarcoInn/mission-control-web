@@ -1,0 +1,19 @@
+{
+  "pipeline": [
+    { "stage": "new", "count": 28, "value": 50200 },
+    { "stage": "contacted", "count": 23, "value": 44100 },
+    { "stage": "call", "count": 18, "value": 37200 },
+    { "stage": "booked", "count": 11, "value": 31800 },
+    { "stage": "proposal", "count": 8, "value": 27500 },
+    { "stage": "won", "count": 5, "value": 16300 },
+    { "stage": "lost", "count": 3, "value": 9100 }
+  ],
+  "nextActionsToday": [
+    { "time": "14:30", "owner": "Jim", "task": "Finalize pricing for VitalCore", "priority": "hoch", "dueDate": "2026-03-03T14:30:00Z" },
+    { "time": "16:00", "owner": "Kelly", "task": "Send proposal to BetterYou", "priority": "hoch", "dueDate": "2026-03-03T16:00:00Z" }
+  ],
+  "topOpportunities": [
+    { "account": "VitalCore Retail", "stage": "proposal", "owner": "Jim", "value": 13200, "probability": 67 },
+    { "account": "BetterYou DACH", "stage": "booked", "owner": "Kelly", "value": 10100, "probability": 58 }
+  ]
+}

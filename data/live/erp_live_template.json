@@ -1,0 +1,15 @@
+{
+  "inventory": [
+    { "sku": "NEM-BASE-001", "name": "Base Formula 500g", "stock": 1040, "reorderPoint": 700, "status": "healthy", "unitCost": 8.2 },
+    { "sku": "NEM-OMEGA-240", "name": "Omega Blend 240ct", "stock": 220, "reorderPoint": 400, "status": "stockout_risk", "unitCost": 12.5 },
+    { "sku": "NEM-PROBIO-090", "name": "Probiotic 90ct", "stock": 980, "reorderPoint": 300, "status": "overstock_risk", "unitCost": 9.1 }
+  ],
+  "purchaseOrders": [
+    { "po": "PO-2026-501", "supplier": "BioRaw GmbH", "sku": "NEM-OMEGA-240", "qty": 2200, "eta": "2026-03-05", "status": "in_transit" },
+    { "po": "PO-2026-502", "supplier": "NutraCaps EU", "sku": "NEM-BASE-001", "qty": 1800, "eta": "2026-03-06", "status": "ordered" }
+  ],
+  "alerts": [
+    { "type": "stockout_risk", "title": "Stockout Risk", "description": "1 SKU unter Reorder Point.", "severity": "rot" },
+    { "type": "overstock_risk", "title": "Overstock Risk", "description": "1 SKU über Zielbestand.", "severity": "gelb" }
+  ]
+}

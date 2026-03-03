@@ -1,0 +1,40 @@
+[
+  {
+    "id": "MC-LIVE-0101",
+    "titel": "ERP sync lag > 2h",
+    "status": "blocked",
+    "prioritaet": "kritisch",
+    "owner": { "name": "Ops Lead" },
+    "due_date": "2026-03-03",
+    "updated_at": "2026-03-03T13:40:00Z",
+    "risiko": {
+      "impact": "hoch",
+      "wahrscheinlichkeit": "hoch",
+      "offen": true
+    },
+    "blocker": {
+      "ist_blockiert": true,
+      "due_time": "2026-03-03T15:00:00Z",
+      "next_action": "Escalate API token rotation to platform team"
+    }
+  },
+  {
+    "id": "MC-LIVE-0102",
+    "titel": "CRM proposal follow-up batch",
+    "status": "in_progress",
+    "prioritaet": "hoch",
+    "owner": { "name": "Sales Desk" },
+    "due_date": "2026-03-03",
+    "updated_at": "2026-03-03T13:20:00Z",
+    "risiko": {
+      "impact": "mittel",
+      "wahrscheinlichkeit": "mittel",
+      "offen": true
+    },
+    "blocker": {
+      "ist_blockiert": false,
+      "due_time": "2026-03-03T17:00:00Z",
+      "next_action": "Finalize outreach sequence"
+    }
+  }
+]

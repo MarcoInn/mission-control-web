@@ -8,8 +8,23 @@
 </head>
 <body>
   <header>
-    <h1>Mission Control v3 — NEM Brand</h1>
-    <p>Executive Command Center · Overview · Agents · ERP · CRM</p>
+    <div class="header-top">
+      <div>
+        <h1>Mission Control v3 — NEM Brand</h1>
+        <p>Executive Command Center · Overview · Agents · ERP · CRM</p>
+      </div>
+      <div class="header-badges">
+        <div class="status-chip">
+          <span class="chip-label">Mode</span>
+          <div id="dataModeBadge"></div>
+        </div>
+        <div class="status-chip">
+          <span class="chip-label">Data Freshness</span>
+          <div id="dataFreshnessBadge"></div>
+          <small id="dataFreshnessText"></small>
+        </div>
+      </div>
+    </div>
   </header>
 
   <main>
@@ -27,6 +42,34 @@
       </section>
 
       <section class="cards" id="kpiCards"></section>
+
+      <section class="split-grid">
+        <section class="panel">
+          <h2>Decision Panel (Top 3 live)</h2>
+          <ul id="decisionList"></ul>
+        </section>
+
+        <section class="panel">
+          <h2>Data Trust</h2>
+          <div id="dataTrustBadge"></div>
+          <ul id="dataTrustMeta"></ul>
+        </section>
+      </section>
+
+      <section class="panel">
+        <h2>Blocker SLA</h2>
+        <div class="cards" id="blockerSlaCards"></div>
+      </section>
+
+      <section class="panel">
+        <h2>Blocker Resolution Panel</h2>
+        <table>
+          <thead>
+            <tr><th>Blocked Task</th><th>Owner</th><th>Due Time</th><th>Next Action</th></tr>
+          </thead>
+          <tbody id="blockerResolutionRows"></tbody>
+        </table>
+      </section>
 
       <section class="panel">
         <h2>Task Tower</h2>
@@ -105,6 +148,6 @@
     </section>
   </main>
 
-  <script src="./app.js?v=3.1"></script>
+  <script src="./app.js?v=3.3"></script>
 </body>
 </html>

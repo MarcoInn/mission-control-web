@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Mission Control Live ERP",
+  "type": "object",
+  "required": ["inventory"],
+  "properties": {
+    "inventory": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["sku", "name", "stock", "reorderPoint", "status", "unitCost"],
+        "properties": {
+          "sku": { "type": "string" },
+          "name": { "type": "string" },
+          "stock": { "type": "number" },
+          "reorderPoint": { "type": "number" },
+          "status": { "enum": ["healthy", "watch", "stockout_risk", "overstock_risk"] },
+          "unitCost": { "type": "number" }
+        }
+      }
+    },
+    "purchaseOrders": { "type": "array" },
+    "alerts": { "type": "array" }
+  }
+}
