@@ -111,21 +111,39 @@ h2 { font-size: clamp(1.9rem, 6vw, 2.8rem); margin: 0 0 16px; }
 .proof-kicker { font-weight: 700; margin: 0 0 10px; color: var(--forest); }
 
 .section { padding: 54px 0; }
-.value-grid, .trust-grid { display: grid; gap: 14px; }
+.value-grid, .trust-grid, .quote-grid, .offer-split { display: grid; gap: 14px; }
 
-.value, .trust-item, .offer-card, details {
+.value, .trust-item, .offer-card, details, .quote-card {
   background: var(--white);
   border: 1px solid #e4dbce;
   border-radius: var(--radius-md);
   padding: 18px;
 }
 
-.value h3 { margin: 0 0 8px; color: var(--forest); font-size: 1.05rem; }
+.value h3, .offer-card h3 { margin: 0 0 8px; color: var(--forest); font-size: 1.05rem; }
 .value p, .trust-item p { margin: 0; }
 
 .trust-item-logo { display: flex; align-items: center; gap: 14px; }
 
-.offer-card { max-width: 720px; box-shadow: var(--shadow-soft); }
+.quote-card {
+  background: #fcfaf6;
+  border-color: #ded5c8;
+}
+.quote {
+  margin: 0 0 8px;
+  color: #2e443d;
+  font-weight: 600;
+}
+.quote-meta {
+  margin: 0;
+  font-size: .86rem;
+  color: #5c7068;
+}
+
+.offer-card { box-shadow: var(--shadow-soft); }
+.plus-placeholder {
+  background: linear-gradient(180deg, #fffdf8, #f8f2e8);
+}
 .offer-badge {
   margin: 0 0 10px;
   display: inline-block;
@@ -137,10 +155,25 @@ h2 { font-size: clamp(1.9rem, 6vw, 2.8rem); margin: 0 0 16px; }
   background: #eef3ef;
   color: #335549;
 }
-.offer-price { font-size: 1.4rem; margin: 0 0 8px; }
+.offer-badge-soft {
+  background: #f4efe5;
+  color: #665944;
+}
+.offer-price { font-size: 1.3rem; margin: 0 0 8px; }
 .strike { text-decoration: line-through; color: #6e7f79; margin-right: 8px; }
 .offer-note { margin: 0 0 10px; font-size: .9rem; color: #5e6e68; }
-.offer-copy { margin: 0 0 16px; }
+.offer-copy { margin: 0 0 12px; }
+.offer-list {
+  margin: 0 0 16px;
+  padding-left: 18px;
+  display: grid;
+  gap: 6px;
+}
+.offer-urgency {
+  margin: 12px 0 0;
+  font-size: .92rem;
+  color: #4d635a;
+}
 
 .faq details { margin-bottom: 10px; }
 summary { cursor: pointer; font-weight: 700; color: var(--forest); }
@@ -168,5 +201,7 @@ summary { cursor: pointer; font-weight: 700; color: var(--forest); }
   .hero-grid { grid-template-columns: 1.2fr .8fr; align-items: start; }
   .value-grid { grid-template-columns: repeat(3, 1fr); }
   .trust-grid { grid-template-columns: 1.1fr 1fr 1fr; }
+  .quote-grid { grid-template-columns: repeat(3, 1fr); }
+  .offer-split { grid-template-columns: 1fr 1fr; }
   .mobile-sticky-cta { display: none; }
 }

@@ -1,68 +1,70 @@
-# AURANEM Landing Page v2 (Conversion Focus)
+# AURANEM Landing Page v2.1 (CRO Pass)
 
-Premium-natural, compliance-safe static LP with A/B-ready messaging and lightweight analytics hooks.
+Premium-natural, compliance-safe static LP with angle-based message matching, upgraded proof architecture, and clearer offer stack.
 
 ## Files
-- `index.html` — v2 page architecture + trust/proof + offer framing
-- `styles.css` — premium-natural visual system + mobile sticky CTA
-- `script.js` — A/B text toggles + analytics event hooks
-- `assets/atlas-seal-northstar.svg` — official winner logo
+- `index.html` — v2.1 architecture (proof upgrade, social placeholders, refined offer stack)
+- `styles.css` — premium-natural design system + proof/quote/offer split components
+- `script.js` — analytics hooks + A/B fallback + URL angle switching
+- `assets/atlas-seal-northstar.svg` — official winner logo (hero + trust)
 
-## What changed in v2
-1. **Outcome-driven hero** with stronger promise + trust line.
-2. **Atlas Seal Northstar logo** added in hero and trust section.
-3. **Clear offer framing** with price anchor (`UVP €119` vs `Starter ab €89*` placeholder).
-4. **Objection handling** through FAQ + friction-reduction copy.
-5. **Sticky mobile CTA** for persistent conversion path.
+## v2.1 Changes
+1. **Proof upgrade (compliance-safe):**
+   - Trust section rewritten from generic brand copy to concrete credibility signals.
+   - Added structured social-proof placeholders (3 quote cards) framed around routine adherence and transparency.
+   - Maintains strict "no medical claims" language.
 
-## Analytics hooks implemented
-- Primary CTA clicks: `cta_primary_click`
-- Secondary CTA clicks: `cta_secondary_click`
-- FAQ expand: `faq_expand`
-- Scroll checkpoints: `scroll_depth` at 25/50/75/100
+2. **Offer refinement:**
+   - Offer now split into **Starter (active)** vs **Plus (placeholder)** to clarify architecture.
+   - Value stack per offer card to reduce ambiguity before CTA click.
+   - Price-anchor communication improved (`UVP €119` vs `ab €89*`) plus non-manipulative urgency note (launch window update framing).
 
-All events are pushed to `window.dataLayer` and logged to console (`[LP_TRACK] ...`).
+3. **Message match by ad angle (`?angle=`):**
+   - `routine_chaos`
+   - `clarity_daily`
+   - `premium_trust`
+   - For each angle, hero eyebrow + headline + subcopy + hero CTA + final CTA + mobile sticky CTA adapt coherently.
 
-## A/B test toggles
-In `script.js`:
-```js
-const LP_CONFIG = {
-  variant: "A", // switch to "B"
-  headlines: { A: "...", B: "..." },
-  primaryCta: { A: "...", B: "..." },
-  finalCta: { A: "...", B: "..." }
-};
-```
+4. **Tracking + CRO mechanics preserved:**
+   - Existing events kept: `lp_loaded`, `cta_primary_click`, `cta_secondary_click`, `faq_expand`, `scroll_depth`.
+   - Event payload now includes `angle` in addition to `variant`.
+   - Mobile sticky CTA retained and still instrumented.
 
-## Test plan (headline / CTA / proof)
-Run tests one variable at a time (minimum 500 unique sessions per variant when possible):
+5. **Winner logo preserved:**
+   - Atlas Seal Northstar logo remains in hero and trust block.
 
-1. **Headline A/B**
-   - A: "Weniger Supplement-Chaos. Mehr tägliche Balance mit System."
-   - B: "30 Tage klare Routine — für mehr Konstanz im Alltag."
-   - Primary metric: Hero CTA CTR
+## v2.1 Test Protocol (today)
+Run one controlled check at a time (keep everything else constant).
 
-2. **CTA copy A/B**
-   - A: "Jetzt 30-Tage-Routine sichern"
-   - B: "30-Tage Starter entdecken"
-   - Primary metric: Total primary CTA CTR
+### Test 1 — Angle message match quality
+- Traffic split by ad intent to:
+  - `?angle=routine_chaos`
+  - `?angle=clarity_daily`
+  - `?angle=premium_trust`
+- Primary metric: Hero CTA CTR by angle.
+- Secondary metric: Scroll 50/75 depth by angle.
 
-3. **Proof block A/B**
-   - A: current structured trust cards
-   - B: compact testimonial-style proof + same compliance note
-   - Primary metric: Scroll depth 75% + final CTA click rate
+### Test 2 — Proof block contribution
+- Keep angle fixed, compare quote-card proof visibility vs previous proof section (if available in backup variant).
+- Primary metric: Final CTA click rate.
+- Secondary metric: FAQ expand rate.
 
-## KPI targets (first optimization sprint)
-- Hero primary CTA CTR: **≥ 6.5%**
-- Total LP primary CTA CTR: **≥ 9%**
-- FAQ expansion rate: **20–35%** (healthy intent signal)
-- Scroll 75% reach: **≥ 45%**
-- Mobile sticky CTA contribution: **≥ 18%** of total primary CTA clicks
+### Test 3 — Offer architecture comprehension
+- Keep traffic and angle stable.
+- Measure effect of Starter-vs-Plus split on offer CTA CTR and drop-off between hero and offer section.
 
-## Quick QA checklist (2 minutes)
-- [ ] Hero + final CTA text change when `LP_CONFIG.variant` switches
-- [ ] Primary/secondary CTA clicks emit correct events
+## Expected KPI effect (v2.1 hypothesis)
+- **Hero CTA CTR:** +8% to +18% relative lift from improved message match.
+- **Offer CTA CTR:** +10% to +20% relative lift from clearer value stack.
+- **Scroll depth 75%:** +6% to +12% from stronger proof hierarchy.
+- **FAQ expand quality signal:** +10% to +25% due to trust/clarity framing.
+
+## Quick QA checklist (2–3 min)
+- [ ] `?angle=routine_chaos` changes hero + CTA set coherently
+- [ ] `?angle=clarity_daily` changes hero + CTA set coherently
+- [ ] `?angle=premium_trust` changes hero + CTA set coherently
+- [ ] `lp_loaded` includes `angle` in dataLayer payload
+- [ ] Primary/secondary CTA events still fire with `ctaName`
 - [ ] FAQ open emits `faq_expand`
-- [ ] Scroll emits 25/50/75/100 once each
 - [ ] Mobile sticky CTA visible on small screens only
 - [ ] No medical cure/disease claims in copy
