@@ -1,0 +1,33 @@
+<svg width="1100" height="700" viewBox="0 0 1100 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="100" y1="70" x2="1020" y2="640" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8F2E8"/>
+      <stop offset="1" stop-color="#DCC9AE"/>
+    </linearGradient>
+    <linearGradient id="jar" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#203F36"/>
+      <stop offset="1" stop-color="#10261F"/>
+    </linearGradient>
+    <linearGradient id="label" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#F3E9DA"/>
+      <stop offset="1" stop-color="#D2BEA1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1100" height="700" rx="26" fill="url(#bg)"/>
+  <ellipse cx="382" cy="588" rx="170" ry="36" fill="#203C31" fill-opacity="0.2"/>
+  <ellipse cx="690" cy="584" rx="196" ry="42" fill="#203C31" fill-opacity="0.18"/>
+  <g>
+    <rect x="246" y="172" width="246" height="368" rx="42" fill="url(#jar)"/>
+    <rect x="274" y="270" width="190" height="168" rx="15" fill="url(#label)"/>
+    <rect x="234" y="140" width="270" height="48" rx="22" fill="#183329"/>
+  </g>
+  <g>
+    <rect x="542" y="128" width="288" height="428" rx="48" fill="url(#jar)"/>
+    <rect x="576" y="244" width="220" height="202" rx="18" fill="url(#label)"/>
+    <rect x="530" y="94" width="312" height="58" rx="24" fill="#183329"/>
+    <rect x="600" y="290" width="130" height="8" rx="4" fill="#2C4F43" fill-opacity="0.82"/>
+    <rect x="600" y="314" width="170" height="7" rx="3.5" fill="#3D6356" fill-opacity="0.7"/>
+  </g>
+  <rect x="114" y="118" width="188" height="60" rx="15" fill="#FFFFFF" fill-opacity="0.6"/>
+  <text x="144" y="155" fill="#2C4B40" font-family="Manrope, Arial" font-size="30" font-weight="700">Plus · 60 Tage</text>
+</svg>

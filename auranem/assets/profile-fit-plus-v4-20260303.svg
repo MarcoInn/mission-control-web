@@ -1,0 +1,11 @@
+<svg width="900" height="620" viewBox="0 0 900 620" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="900" height="620" rx="24" fill="#F2E9DB"/>
+<circle cx="230" cy="210" r="104" fill="#CDB390"/>
+<circle cx="278" cy="252" r="66" fill="#E5D6C0"/>
+<rect x="360" y="130" width="400" height="340" rx="30" fill="#FFFFFF" fill-opacity="0.84"/>
+<text x="398" y="216" fill="#24463C" font-family="Manrope, Arial" font-size="42" font-weight="700">Plus Fit</text>
+<text x="398" y="274" fill="#3E6155" font-family="Manrope, Arial" font-size="30">8-Wochen-Planung</text>
+<text x="398" y="321" fill="#3E6155" font-family="Manrope, Arial" font-size="30">mit hoher Kontinuität</text>
+<rect x="154" y="350" width="184" height="36" rx="18" fill="#214339"/>
+<text x="178" y="375" fill="#EDE1CF" font-family="Manrope, Arial" font-size="20" font-weight="700">Planer:innen</text>
+</svg>

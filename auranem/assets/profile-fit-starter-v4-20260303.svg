@@ -1,0 +1,10 @@
+<svg width="900" height="620" viewBox="0 0 900 620" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="900" height="620" rx="24" fill="#F3ECE0"/>
+<circle cx="220" cy="240" r="110" fill="#D9C5A8"/>
+<rect x="370" y="140" width="380" height="320" rx="30" fill="#FFFFFF" fill-opacity="0.82"/>
+<text x="408" y="220" fill="#24463C" font-family="Manrope, Arial" font-size="42" font-weight="700">Starter Fit</text>
+<text x="408" y="278" fill="#3E6155" font-family="Manrope, Arial" font-size="30">Klare 30-Tage-Basis</text>
+<text x="408" y="325" fill="#3E6155" font-family="Manrope, Arial" font-size="30">für den Routinen-Start</text>
+<rect x="156" y="355" width="145" height="36" rx="18" fill="#214339"/>
+<text x="181" y="380" fill="#EDE1CF" font-family="Manrope, Arial" font-size="20" font-weight="700">Einsteiger</text>
+</svg>
