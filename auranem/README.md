@@ -1,65 +1,60 @@
-# AURANEM Landing Page v2.2 (Customer Magnet Pass)
+# AURANEM Landing Page v2.4 (Real Content + Product Visual Integration)
 
-Customer-facing, compliance-safe LP focused on 30-day routine clarity and faster offer selection.
+v2.4 removes placeholder content and ships a concrete, compliance-safe conversion page with real product visuals.
 
 ## Files
-- `index.html` — v2.2 page architecture with customer-first messaging
-- `styles.css` — premium-natural style system + mobile sticky CTA
-- `script.js` — A/B text toggles + analytics event hooks (kept from v2.1)
-- `assets/atlas-seal-northstar.svg` — asset available, no internal winner-language shown on page
+- `index.html` — v2.4 conversion architecture with concrete trust, offer, fit, timeline, FAQ, and final CTA blocks
+- `styles.css` — updated visual system including hero/offer product visuals and timeline grid
+- `script.js` — unchanged tracking + angle routing + CTA instrumentation
+- `assets/atlas-seal-northstar.svg` — winner seal
+- `assets/starter-packshot.png` — integrated starter product visual
+- `assets/plus-packshot.png` — integrated plus product visual
 
-## v2.2 changes shipped
-1. **Above-the-fold reframed to customer outcome in 30 days**
-   - Hero now leads with practical result framing (routine that fits daily life).
-2. **Offer comparison added (Starter vs Plus)**
-   - Simple decision guidance + recommended badge on Plus.
-3. **"Ist das für mich?" section added**
-   - 3 customer profiles for fast self-identification.
-4. **Daily timeline section added**
-   - Morning / Day / Evening clarity to reduce uncertainty.
-5. **Trust block rebuilt with customer-relevant proof placeholders**
-   - Structured placeholders for verified voices + transparent offer logic.
-6. **CTA copy upgraded across page**
-   - Benefit-led wording in hero, offer, final CTA, and sticky mobile CTA.
-7. **Compliance-safe copy retained**
-   - No medical/disease claims.
-8. **Tracking hooks retained from v2.1**
-   - `cta_primary_click`, `cta_secondary_click`, `faq_expand`, `scroll_depth`, `lp_loaded`.
+## What became concrete in v2.4
+1. **Real product visuals added (no placeholders):**
+   - Hero proof card now includes `starter-packshot.png`.
+   - Offer cards include both `starter-packshot.png` and `plus-packshot.png`.
 
-## v2.2 test plan
-Test one variable at a time (min. ~500 unique sessions/variant if possible):
+2. **Trust placeholders replaced with concrete blocks:**
+   - “What is included in Starter” (30-day unit + start guide + weekly checklist)
+   - “What is included in Plus” (60-day supply + routine card + priority support SLA)
+   - “Quality & Transparency” (batch labeling, usage clarity, no disease/cure claims)
+   - Atlas winner mark as explicit brand/provenance signal
 
-1. **Hero outcome headline A/B**
-   - A: "In 30 Tagen zu einer Routine, die in deinen Alltag passt."
-   - B: "30 Tage klare Struktur — damit Dranbleiben leichter wird."
-   - Primary metric: Hero primary CTA CTR
+3. **Offer comparison made real:**
+   - Plus block is no longer “Placeholder”; now explicit 60-day option with concrete scope and pricing structure.
 
-2. **Offer selection framing A/B**
-   - A: current “Starter vs Plus + short rule”
-   - B: same layout + “3-Fragen-Wahlhilfe” microcopy
-   - Primary metric: Offer-section primary CTA CTR
+4. **Conversion architecture completed:**
+   - Hero outcome + CTA
+   - Offer comparison (Starter vs Plus)
+   - Profile fit section (`#fit`)
+   - 30-day routine timeline (`#timeline`)
+   - Final CTA section
+   - Sticky mobile CTA retained
 
-3. **Proof placeholders format A/B**
-   - A: current 3-card placeholder proof structure
-   - B: compact proof strip + one expanded customer voice card
-   - Primary metric: Scroll depth 75% + final CTA click rate
+5. **Expectation setting clarified:**
+   - Added explicit expectation framing: routine consistency focus, individual outcomes vary, no medical promises.
 
-## KPI hypotheses (next sprint)
-- Hero primary CTA CTR: **+20–30%** vs v2.1 baseline
-- Offer-section CTA CTR: **+15–25%** through clearer Starter/Plus selection
-- Final CTA click-through: **+10–20%** via stronger benefit-led wording
-- Scroll 75% reach: **≥ 50%** with clearer section progression
-- Sticky mobile CTA contribution: **≥ 20%** of total primary CTA clicks
+## Tracking + Routing (preserved)
+- Existing events remain active:
+  - `lp_loaded`
+  - `cta_primary_click`
+  - `cta_secondary_click`
+  - `faq_expand`
+  - `scroll_depth`
+- URL angle routing remains active via `?angle=`:
+  - `routine_chaos`
+  - `clarity_daily`
+  - `premium_trust`
+- Hero + CTA text updates still function through `script.js` IDs:
+  - `ab-eyebrow`, `ab-headline`, `ab-subcopy`, `ab-primary-cta`, `ab-final-cta`, `ab-mobile-cta`
 
-## 2-minute QA checklist (v2.2)
-- [ ] Hero + final CTA text switch correctly via `LP_CONFIG.variant`
-- [ ] Primary/secondary CTA events still fire and include `ctaName`
-- [ ] FAQ expand emits `faq_expand`
-- [ ] Scroll emits 25/50/75/100 once each
-- [ ] Sticky CTA visible on mobile only
-- [ ] No internal language (e.g., winner/internal decision artifacts) in customer-facing copy
-- [ ] No medical/disease claims
-
-## Deploy target
-- Public path: `/auranem/`
-- Live URL: `https://marcoinn.github.io/mission-control-web/auranem/`
+## QA checklist (2 minutes)
+- [ ] Hero shows real product visual (starter packshot)
+- [ ] Offer shows both Starter and Plus visuals
+- [ ] No placeholder language remains (e.g., "Placeholder", "Template")
+- [ ] No medical cure/disease claims
+- [ ] `?angle=routine_chaos` updates hero + CTA copy
+- [ ] `?angle=clarity_daily` updates hero + CTA copy
+- [ ] `?angle=premium_trust` updates hero + CTA copy
+- [ ] Primary and sticky CTA clicks are still tracked
