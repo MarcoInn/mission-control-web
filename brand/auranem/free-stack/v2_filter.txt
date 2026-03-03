@@ -1,0 +1,21 @@
+[0:v]split=6[s1][s2][s3][s4][s5][s6];
+[s1]trim=start=0:end=2,setpts=PTS-STARTPTS,scale=1242:2208,crop=1080:1920:20:40[v1];
+[s2]trim=start=2:end=5,setpts=PTS-STARTPTS,scale=1242:2208,crop=1080:1920:92:70[v2];
+[s3]trim=start=5:end=8,setpts=PTS-STARTPTS,scale=1242:2208,crop=1080:1920:45:55[v3];
+[s4]trim=start=8:end=11,setpts=PTS-STARTPTS,scale=1242:2208,crop=1080:1920:108:82[v4];
+[s5]trim=start=11:end=14,setpts=PTS-STARTPTS,scale=1242:2208,crop=1080:1920:62:66[v5];
+[s6]trim=start=14:end=18,setpts=PTS-STARTPTS,scale=1242:2208,crop=1080:1920:35:50[v6];
+[v1][v2][v3][v4][v5][v6]concat=n=6:v=1:a=0,
+format=yuv420p,
+drawbox=x=0:y=0:w=iw:h=210:color=black@1.0:t=fill,
+drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf:text='Stop scrolling. Better mornings start now':fontcolor=white:fontsize=44:x=(w-text_w)/2:y=70:enable='lt(t,2.0)',
+drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='Simple morning routine':fontcolor=white:fontsize=56:x=(w-text_w)/2:y=70:enable='between(t,2,6)',
+drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='Premium by nature':fontcolor=white:fontsize=56:x=(w-text_w)/2:y=70:enable='between(t,6,10)',
+drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='1 scoop. 1 minute.':fontcolor=white:fontsize=56:x=(w-text_w)/2:y=70:enable='between(t,10,14.5)',
+drawbox=x=70:y=1570:w=940:h=110:color=black@0.42:t=fill:enable='between(t,2,14.5)',
+drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf:text='AURANEM | daily wellness support':fontcolor=white:fontsize=52:x=(w-text_w)/2:y=1640:enable='between(t,2,14.5)',
+drawbox=x=0:y=0:w=iw:h=ih:color=black@0.52:t=fill:enable='gte(t,14.5)',
+drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf:text='Build a better morning':fontcolor=white:fontsize=72:x=(w-text_w)/2:y=720:enable='gte(t,14.5)',
+drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='AURANEM daily wellness support':fontcolor=white:fontsize=48:x=(w-text_w)/2:y=840:enable='gte(t,14.5)',
+drawbox=x=250:y=980:w=580:h=120:color=white@0.96:t=fill:enable='gte(t,14.5)',
+drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf:text='Shop now':fontcolor=black:fontsize=62:x=(w-text_w)/2:y=1008:enable='gte(t,14.5)'[v]
