@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="t d">
+<title id="t">Transparenz und Qualität</title><desc id="d">Infografik zu Chargenkennzeichnung, Verzehrempfehlung und Claim-Sicherheit.</desc>
+<rect width="1200" height="520" rx="24" fill="#f7f2e9"/>
+<g font-family="Arial" fill="#18382f">
+<rect x="80" y="70" width="320" height="380" rx="20" fill="#fff" stroke="#d8ccb9"/>
+<text x="120" y="120" font-size="22" font-weight="700">1 · Chargen-ID</text>
+<text x="120" y="156" font-size="14">Jede Einheit mit Batch-Label</text>
+<rect x="120" y="186" width="230" height="56" rx="10" fill="#eef3ef"/>
+<text x="138" y="220" font-size="18">LOT AUR-2603-AT</text>
+
+<rect x="440" y="70" width="320" height="380" rx="20" fill="#fff" stroke="#d8ccb9"/>
+<text x="480" y="120" font-size="22" font-weight="700">2 · Klare Anwendung</text>
+<text x="480" y="156" font-size="14">Verzehrempfehlung transparent</text>
+<circle cx="600" cy="250" r="72" fill="#f1e8da"/>
+<text x="600" y="245" text-anchor="middle" font-size="18">Täglich</text>
+<text x="600" y="270" text-anchor="middle" font-size="18">konsistent</text>
+
+<rect x="800" y="70" width="320" height="380" rx="20" fill="#fff" stroke="#d8ccb9"/>
+<text x="840" y="120" font-size="22" font-weight="700">3 · Claim-Safe</text>
+<text x="840" y="156" font-size="14">Keine Heil- oder Krankheitsclaims</text>
+<path d="M870 238l44 44 76-82" fill="none" stroke="#2c6b52" stroke-width="10" stroke-linecap="round"/>
+<text x="840" y="340" font-size="14">Fokus auf Routine, Transparenz</text>
+</g>
+</svg>

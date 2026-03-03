@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="t d">
+<title id="t">Authentische Social Proof Struktur</title><desc id="d">Layout mit verifizierbaren proof types ohne Erfolgsgarantien.</desc>
+<rect width="1200" height="520" rx="22" fill="#f8f4ee"/>
+<text x="80" y="78" font-family="Arial" font-size="34" fill="#18382f">Echte Nachweise statt Hype</text>
+<g font-family="Arial">
+<rect x="80" y="120" width="330" height="320" rx="16" fill="#fff" stroke="#dfd2bf"/>
+<text x="110" y="168" font-size="22" fill="#18382f">Formate</text>
+<text x="110" y="206" font-size="15" fill="#335549">• Verifizierte Kundenfragen (FAQ)</text>
+<text x="110" y="238" font-size="15" fill="#335549">• Qualitätskennzeichen / Batch-ID</text>
+<text x="110" y="270" font-size="15" fill="#335549">• Klare Starter vs Plus Facts</text>
+<text x="110" y="302" font-size="15" fill="#335549">• Routinedaten statt Heilaussagen</text>
+
+<rect x="435" y="120" width="330" height="320" rx="16" fill="#fff" stroke="#dfd2bf"/>
+<text x="465" y="168" font-size="22" fill="#18382f">Was wir nicht tun</text>
+<text x="465" y="206" font-size="15" fill="#7e4a45">✕ Keine Vorher/Nachher Heilclaims</text>
+<text x="465" y="238" font-size="15" fill="#7e4a45">✕ Keine Fake-Zitate</text>
+<text x="465" y="270" font-size="15" fill="#7e4a45">✕ Keine unrealistischen Garantien</text>
+
+<rect x="790" y="120" width="330" height="320" rx="16" fill="#fff" stroke="#dfd2bf"/>
+<text x="820" y="168" font-size="22" fill="#18382f">Conversion-Wirkung</text>
+<text x="820" y="206" font-size="15" fill="#335549">Mehr Vertrauen bei Erstbesuch</text>
+<text x="820" y="238" font-size="15" fill="#335549">Schnellere Entscheidungslogik</text>
+<text x="820" y="270" font-size="15" fill="#335549">Geringere Absprungrate im Offer-Block</text>
+</g>
+</svg>
