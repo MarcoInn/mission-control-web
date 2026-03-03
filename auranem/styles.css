@@ -113,6 +113,22 @@ h2 { font-size: clamp(1.9rem, 6vw, 2.8rem); margin: 0 0 16px; }
   padding: 20px;
   box-shadow: var(--shadow-soft);
 }
+.hero-lifestyle { margin: 18px 0 0; }
+.hero-lifestyle img, .wide-visual img, .profile-card img, .cta-directional img {
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  border: 1px solid #e4dbce;
+  background: #fff;
+}
+.hero-lifestyle figcaption, .wide-visual figcaption {
+  margin: 8px 2px 0;
+  font-size: .88rem;
+  color: #4f655d;
+}
+.wide-visual { margin: 0 0 18px; }
+.profile-card img { margin-bottom: 12px; }
+.cta-directional { margin: 0 0 16px; }
 .hero-proof-card ul { margin: 0; padding-left: 20px; display: grid; gap: 8px; }
 .proof-kicker { font-weight: 700; margin: 0 0 10px; color: var(--forest); }
 .hero-packshot { margin: 0 0 12px; }

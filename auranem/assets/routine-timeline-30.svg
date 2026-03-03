@@ -1,16 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="t d">
-<title id="t">30-Tage Routine-Timeline</title><desc id="d">Visualisiert vier Phasen der AURANEM Routine über 30 Tage.</desc>
-<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e9dfd2"/><stop offset="1" stop-color="#f8f4ee"/></linearGradient></defs>
-<rect width="1200" height="420" rx="24" fill="url(#g)"/>
-<path d="M130 210h940" stroke="#18382f" stroke-width="8" stroke-linecap="round"/>
-<g font-family="Arial" fill="#18382f">
-<circle cx="180" cy="210" r="34" fill="#18382f"/><text x="180" y="216" text-anchor="middle" fill="#fff" font-size="14">1-3</text>
-<rect x="130" y="260" width="150" height="90" rx="12" fill="#fff"/><text x="145" y="290" font-size="15">Setup</text><text x="145" y="312" font-size="12">Zeitanker setzen</text>
-<circle cx="430" cy="210" r="34" fill="#2b4a40"/><text x="430" y="216" text-anchor="middle" fill="#fff" font-size="14">4-10</text>
-<rect x="355" y="70" width="150" height="90" rx="12" fill="#fff"/><text x="370" y="100" font-size="15">Stabilisieren</text><text x="370" y="122" font-size="12">Woche vollziehen</text>
-<circle cx="680" cy="210" r="34" fill="#406257"/><text x="680" y="216" text-anchor="middle" fill="#fff" font-size="14">11-20</text>
-<rect x="605" y="260" width="150" height="90" rx="12" fill="#fff"/><text x="620" y="290" font-size="15">Alltagstest</text><text x="620" y="312" font-size="12">Reise/Office Tage</text>
-<circle cx="930" cy="210" r="34" fill="#587a6f"/><text x="930" y="216" text-anchor="middle" fill="#fff" font-size="14">21-30</text>
-<rect x="855" y="70" width="170" height="90" rx="12" fill="#fff"/><text x="870" y="100" font-size="15">Review</text><text x="870" y="122" font-size="12">Starter vs Plus</text>
+<svg width="1200" height="420" viewBox="0 0 1200 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t d">
+<title id="t">Routine Timeline Visual</title>
+<desc id="d">4-Phasen-Zeitleiste für den 30-Tage-Routinenaufbau.</desc>
+<rect width="1200" height="420" rx="24" fill="#FFFFFF"/>
+<path d="M130 210H1070" stroke="#A6BFB2" stroke-width="8" stroke-linecap="round"/>
+<g font-family="Arial" fill="#25483D">
+<circle cx="190" cy="210" r="34" fill="#EAF2ED" stroke="#89A999" stroke-width="4"/>
+<text x="190" y="217" text-anchor="middle" font-size="16" font-weight="700">Tag 1</text>
+<text x="190" y="278" text-anchor="middle" font-size="19" font-weight="700">Start</text>
+<text x="190" y="304" text-anchor="middle" font-size="15">Setup fixieren</text>
+
+<circle cx="470" cy="210" r="34" fill="#EAF2ED" stroke="#89A999" stroke-width="4"/>
+<text x="470" y="217" text-anchor="middle" font-size="16" font-weight="700">W1</text>
+<text x="470" y="278" text-anchor="middle" font-size="19" font-weight="700">Rhythmus</text>
+<text x="470" y="304" text-anchor="middle" font-size="15">Gewohnheit bauen</text>
+
+<circle cx="750" cy="210" r="34" fill="#EAF2ED" stroke="#89A999" stroke-width="4"/>
+<text x="750" y="217" text-anchor="middle" font-size="16" font-weight="700">W3</text>
+<text x="750" y="278" text-anchor="middle" font-size="19" font-weight="700">Stabilität</text>
+<text x="750" y="304" text-anchor="middle" font-size="15">Friction reduzieren</text>
+
+<circle cx="1030" cy="210" r="34" fill="#EAF2ED" stroke="#89A999" stroke-width="4"/>
+<text x="1030" y="217" text-anchor="middle" font-size="16" font-weight="700">Tag 30</text>
+<text x="1030" y="278" text-anchor="middle" font-size="19" font-weight="700">Review</text>
+<text x="1030" y="304" text-anchor="middle" font-size="15">Nächsten Schritt wählen</text>
 </g>
 </svg>

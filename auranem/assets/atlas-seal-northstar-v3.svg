@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+<rect width="1024" height="1024" fill="#ECE7DE"/>
+<g transform="translate(512,390)">
+  <circle r="196" fill="none" stroke="#24372D" stroke-width="13"/>
+  <circle r="166" fill="none" stroke="#A8B8A6" stroke-width="5"/>
+  <circle r="122" fill="none" stroke="#24372D" stroke-width="2" stroke-dasharray="2 13" stroke-linecap="round"/>
+  <path d="M-68 78 L0 -112 L68 78 L0 38 Z" fill="#6D846E"/>
+  <path d="M-46 -6 C-22 -30 22 -30 46 -6 C26 26 -26 26 -46 -6Z" fill="#90A390"/>
+  <circle r="16" fill="#ECE7DE" stroke="#24372D" stroke-width="5"/>
+</g>
+<text x="512" y="706" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, serif" font-size="88" letter-spacing="8" fill="#1F2F26">AURANEM</text>
+<text x="512" y="752" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="20" letter-spacing="4" fill="#4D5D51">ATLAS SEAL · NORTHSTAR</text>
+</svg>
