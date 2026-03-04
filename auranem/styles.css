@@ -135,7 +135,21 @@ h2 { font-size: clamp(1.9rem, 6vw, 2.8rem); margin: 0 0 16px; }
   color: #4b6359;
 }
 
-.cta-row { display: flex; gap: 12px; flex-wrap: wrap; margin: 22px 0 10px; }
+.cta-row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 22px 0 10px;
+}
+
+.cta-secondary-link {
+  color: #22473b;
+  font-weight: 700;
+  font-size: .95rem;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
 
 .btn {
   display: inline-block;
@@ -276,6 +290,52 @@ h2 { font-size: clamp(1.9rem, 6vw, 2.8rem); margin: 0 0 16px; }
   font-size: .9rem;
 }
 
+.offer-quick-compare {
+  margin: 0 0 16px;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid #ddd2c1;
+  background: #fff;
+}
+
+.offer-quick-title {
+  margin: 0 0 10px;
+  font-size: .9rem;
+  font-weight: 700;
+  letter-spacing: .03em;
+  color: #22473b;
+}
+
+.offer-quick-grid {
+  display: grid;
+  gap: 10px;
+}
+
+.offer-quick-grid article {
+  border: 1px solid #e7ddce;
+  border-radius: 10px;
+  padding: 10px 12px;
+  background: #fffcf7;
+}
+
+.quick-plan {
+  margin: 0 0 8px;
+  font-size: .88rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: #36544a;
+}
+
+.offer-quick-grid ul {
+  margin: 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 5px;
+  color: #3f5d53;
+  font-size: .88rem;
+}
+
 .offer-card { box-shadow: var(--shadow-soft); }
 .offer-plus {
   background: linear-gradient(180deg, #fffdf8, #f8f2e8);
@@ -340,6 +400,26 @@ summary { cursor: pointer; font-weight: 700; color: var(--forest); }
 }
 .final p { margin: 0 0 18px; }
 
+.final-assurance {
+  list-style: none;
+  margin: 14px 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.final-assurance li {
+  padding: 7px 10px;
+  border-radius: 999px;
+  border: 1px solid #d7c9b5;
+  background: rgba(255, 255, 255, .84);
+  color: #345247;
+  font-size: .84rem;
+  font-weight: 600;
+}
+
 .mobile-sticky-cta {
   position: fixed;
   left: 12px;
@@ -357,6 +437,7 @@ summary { cursor: pointer; font-weight: 700; color: var(--forest); }
   .snapshot-grid { grid-template-columns: 1fr 1fr; }
   .value-grid { grid-template-columns: repeat(3, 1fr); }
   .trust-grid-4 { grid-template-columns: repeat(4, 1fr); }
+  .offer-quick-grid { grid-template-columns: 1fr 1fr; }
   .offer-split { grid-template-columns: 1fr 1fr; }
   .timeline-grid { grid-template-columns: repeat(4, 1fr); }
   .final { margin-bottom: 54px; }
