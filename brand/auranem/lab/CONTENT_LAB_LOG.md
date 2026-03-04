@@ -196,3 +196,56 @@ If LP section CTR to product detail stays < 2.0% over 500 sessions, test a new h
 If hero section click-through to PDP remains < 2.2% after 1,000 LP sessions, test two new hook lines while keeping the same visual composition:
 1) "Dein Tag, klar strukturiert."
 2) "Mehr Klarheit beginnt morgens."
+
+---
+
+## Cycle 2026-03-04 01:33 UTC — Selected Format: Ad Static (TOF → MOF bridge)
+
+**Goal:** Create a static ad concept that stops scroll quickly, feels premium-authentic (not slideshow/template), and moves users into a routine-focused click without compliance risk.
+
+### 1) Two solution approaches (free/open-first)
+
+### Approach A — "Hands + Habit" (human-in-frame product moment)
+- **Production stack (free/open):** Smartphone photo + Snapseed/GIMP (light correction, crop) + Figma free for text lockup.
+- **Composition style:** Tight crop of real hand placing AURANEM beside water + notebook; slight motion blur on hand to imply action.
+- **Hook line:** "Routine schlägt Chaos."
+- **Support line:** "Ein klarer Start macht den Tag leichter planbar."
+- **CTA:** "Routine testen"
+- **Prompt/style intent:** Real-life micro-moment, tactile textures, minimal overlay text for feed readability.
+- **Compliance-safe angle:** routine consistency + daily clarity support, no disease/cure/guarantee.
+
+### Approach B — "Benefit Stack Card" (modular performance design)
+- **Production stack (free/open):** Krita/Figma free + open-licensed paper texture + product packshot.
+- **Composition style:** Product bottle left, three short benefit chips right ("Morgenfokus", "Alltagsklarheit", "Konstanter Ablauf").
+- **Hook line:** "Mehr Klarheit. Weniger Reibung."
+- **Support line:** "Für deinen strukturierten Tagesrhythmus."
+- **CTA:** "Mehr erfahren"
+- **Prompt/style intent:** High-contrast typography and card layout for instant scan.
+- **Compliance-safe angle:** general wellbeing routine framing only.
+
+### 2) Scorecard comparison
+
+| Metric | Approach A (Hands + Habit) | Approach B (Benefit Stack Card) |
+| :--- | :--- | :--- |
+| **Hook** | 9/10 — human action frame grabs attention fast | 8/10 — strong copy-led hook, less visual emotion |
+| **Readability** | 8/10 — clear with short text lockup | 9/10 — chip system scans very quickly |
+| **Authenticity** | 9/10 — real hand/product interaction feels native | 7/10 — can feel template-like if over-cleaned |
+| **Brand Fit** | 9/10 — premium trust + routine anchor strongly aligned | 8/10 — solid clarity, slightly more generic DTC look |
+| **CTA** | 8/10 — direct, action-oriented | 8/10 — clear but softer urgency |
+| **TOTAL** | **43/50** | **40/50** |
+
+### 3) Decision
+- **Winner kept:** Approach A — "Hands + Habit" (**43/50**)
+- **Loser archived:** Approach B — "Benefit Stack Card" (**40/50**)
+- **Why loser lost:** Excellent scanability, but lower authenticity and higher risk of looking like a polished template ad versus a believable routine moment.
+
+### 4) Compliance and constraints check
+- Free/open-first tools used in concepting ✅
+- Supplement-safe language (no cure/disease/guarantee claims) ✅
+- No slideshow feel (single, action-led static frame) ✅
+- No external publishing performed ✅
+
+### 5) Next iteration trigger
+If TOF CTR is < 1.5% after first 10k impressions, keep the same image and test two hook variants only:
+1) "Klar starten. Besser durchziehen."
+2) "Deine Routine, ohne Reibung."
