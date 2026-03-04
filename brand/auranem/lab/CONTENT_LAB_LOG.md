@@ -249,3 +249,58 @@ If hero section click-through to PDP remains < 2.2% after 1,000 LP sessions, tes
 If TOF CTR is < 1.5% after first 10k impressions, keep the same image and test two hook variants only:
 1) "Klar starten. Besser durchziehen."
 2) "Deine Routine, ohne Reibung."
+
+---
+
+## Cycle 2026-03-04 02:33 UTC — Selected Format: UGC 15–20s (TOF)
+
+**Goal:** Create a native-feeling short UGC concept with clear first-2-second hook and compliance-safe routine messaging, while avoiding slideshow aesthetics.
+
+### 1) Two solution approaches (free/open-first)
+
+### Approach A — "Pocket Check-In" (selfie walk-and-talk, one-take)
+- **Production stack (free/open):** Smartphone front camera + CapCut free (autocaptions, trim, loudness normalize).
+- **Motion/composition style:** Creator walking from kitchen to desk in one continuous take; product enters frame naturally at desk.
+- **Structure (17s):**
+  - 0–2s Hook: "Wenn mein Morgen chaotisch startet, verliere ich den ganzen Flow."
+  - 2–8s Routine setup: short real-life sequence (water, bottle, desk open).
+  - 8–14s Everyday framing: "Seit ich das als festen Step drin habe, läuft mein Tag strukturierter."
+  - 14–17s CTA: "Probier's als Teil deiner Morgenroutine: AURANEM."
+- **Compliance-safe angle:** routine consistency + everyday clarity support; no cure/disease/guarantee language.
+
+### Approach B — "POV Desk Sprint" (top-down action cuts, kinetic)
+- **Production stack (free/open):** Smartphone rear camera + DaVinci Resolve free (quick jump cuts, speed changes, text overlays).
+- **Motion/composition style:** POV shots: notebook open, timer start, water pour, bottle place, first task checkbox tick.
+- **Structure (18s):**
+  - 0–2s Hook text + action: "2 Minuten Setup. Viel klarerer Start."
+  - 2–11s Sequence: 4–5 rapid routine actions synced to beat.
+  - 11–15s Outcome framing: "Weniger Reibung, mehr Fokuszeit im Ablauf."
+  - 15–18s CTA: "Starte deine Routine mit AURANEM."
+- **Compliance-safe angle:** structured day framing only; no medical claims.
+
+### 2) Scorecard comparison
+
+| Metric | Approach A (Pocket Check-In) | Approach B (POV Desk Sprint) |
+| :--- | :--- | :--- |
+| **Hook** | 8/10 — strong emotional relatability in first-person line | 9/10 — very punchy first 2s with movement |
+| **Readability** | 9/10 — slower pace + autocaptions easy to follow | 7/10 — fast cuts reduce caption retention |
+| **Authenticity** | 9/10 — selfie walk-and-talk feels native and trustworthy | 8/10 — still real, but more edited/performance-feel |
+| **Brand Fit** | 8/10 — routine + clarity anchors present | 9/10 — strong "system/routine" framing throughout |
+| **CTA** | 8/10 — clear and natural close | 8/10 — clear but slightly ad-like tone |
+| **TOTAL** | **42/50** | **41/50** |
+
+### 3) Decision
+- **Winner kept:** Approach A — "Pocket Check-In" (**42/50**)
+- **Loser archived:** Approach B — "POV Desk Sprint" (**41/50**)
+- **Why loser lost:** Excellent hook intensity, but pacing lowered readability and slightly reduced native trust versus one-take creator delivery.
+
+### 4) Compliance and constraints check
+- Free/open-first tools used in concepting ✅
+- Supplement-safe language (no cure/disease/guarantee claims) ✅
+- No slideshow feel (continuous movement + real actions) ✅
+- No external publishing performed ✅
+
+### 5) Next iteration trigger
+If TOF hold-rate at 3s is < 30%, keep the same body and CTA but test two hook variants:
+1) "Chaos am Morgen? Kenn ich."
+2) "Mein Tag kippt, wenn der Start unsauber ist."
