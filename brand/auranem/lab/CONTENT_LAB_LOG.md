@@ -143,3 +143,56 @@ If CTR < 1.2% after first paid test window, iterate only hook line (keep body + 
 If LP section CTR to product detail stays < 2.0% over 500 sessions, test a new headline pair while keeping visual structure fixed:
 1) "Routine statt Chaos" vs
 2) "Mehr Klarheit in deinem Tagesablauf".
+
+---
+
+## Cycle 2026-03-04 00:33 UTC — Selected Format: Hero Image (TOF)
+
+**Goal:** Develop a premium, scroll-stopping hero visual concept for AURANEM that communicates "Routine statt Chaos" without medical claims and without slideshow aesthetics.
+
+### 1) Two solution approaches (free/open-first)
+
+### Approach A — "Morning Ritual Macro" (editorial product realism)
+- **Production stack (free/open):** Smartphone photo (natural window light) + GIMP/Krita + Upscayl (optional upscale).
+- **Composition:** Bottle in foreground on a real breakfast/workstation scene (water glass, notebook, soft daylight), shallow depth-of-field, subtle grain.
+- **Headline overlay:** "Routine statt Chaos."
+- **Support line:** "Starte deinen Tag mit mehr Klarheit im Ablauf."
+- **CTA:** "Routine starten"
+- **Style intent:** Premium but human, tactile realism, no over-designed ad polish.
+- **Compliance-safe angle:** daily routine + clarity in everyday flow; no guarantee language.
+
+### Approach B — "System Grid" (clean design-led trust visual)
+- **Production stack (free/open):** Figma free + open-source iconography + open licensed texture background.
+- **Composition:** Bottle centered in a modular 3x3 grid with micro-labels: "Morgen", "Fokuszeit", "Abschluss"; soft gradient brand background.
+- **Headline overlay:** "Klarheit als System."
+- **Support line:** "Ein konsistenter Ablauf statt täglichem Durcheinander."
+- **CTA:** "Mehr erfahren"
+- **Style intent:** Structured, modern, very readable.
+- **Compliance-safe angle:** consistency and routine framing only.
+
+### 2) Scorecard comparison
+
+| Metric | Approach A (Morning Ritual Macro) | Approach B (System Grid) |
+| :--- | :--- | :--- |
+| **Hook** | 8/10 — natural lifestyle + product focus pulls attention | 7/10 — clean but less emotionally sticky |
+| **Readability** | 8/10 — strong if text kept minimal | 9/10 — grid supports very clear scan path |
+| **Authenticity** | 9/10 — real-world scene feels credible | 7/10 — can feel a bit too designed/template-like |
+| **Brand Fit** | 9/10 — premium trust + routine narrative fits anchors | 8/10 — strong clarity, slightly colder emotional tone |
+| **CTA** | 8/10 — direct and context-consistent | 8/10 — clear but less action urgency |
+| **TOTAL** | **42/50** | **39/50** |
+
+### 3) Decision
+- **Winner kept:** Approach A — "Morning Ritual Macro" (**42/50**)
+- **Loser archived:** Approach B — "System Grid" (**39/50**)
+- **Why loser lost:** Excellent readability, but lower authenticity and weaker emotional pull for TOF attention compared with the more human, routine-grounded hero concept.
+
+### 4) Compliance and constraints check
+- Free/open-first tools used in concepting ✅
+- Supplement-safe language (no cure/disease/guarantee claims) ✅
+- No slideshow feel (single coherent hero frame concept) ✅
+- No external publishing performed ✅
+
+### 5) Next iteration trigger
+If hero section click-through to PDP remains < 2.2% after 1,000 LP sessions, test two new hook lines while keeping the same visual composition:
+1) "Dein Tag, klar strukturiert."
+2) "Mehr Klarheit beginnt morgens."
