@@ -304,3 +304,56 @@ If TOF CTR is < 1.5% after first 10k impressions, keep the same image and test t
 If TOF hold-rate at 3s is < 30%, keep the same body and CTA but test two hook variants:
 1) "Chaos am Morgen? Kenn ich."
 2) "Mein Tag kippt, wenn der Start unsauber ist."
+
+---
+
+## Cycle 2026-03-04 03:33 UTC — Selected Format: LP Section Visual (MOF)
+
+**Goal:** Create a conversion-oriented LP visual section that increases trust and product-detail click intent with compliance-safe supplement wording and zero slideshow feel.
+
+### 1) Two solution approaches (free/open-first)
+
+### Approach A — "Proof-in-Routine Strip" (human micro-proof sequence)
+- **Production stack (free/open):** Figma free + smartphone photos + GIMP cleanup.
+- **Composition style:** Three horizontal real-life tiles from one person/day: **Morning setup** (water + product), **Focus block** (task list in progress), **Day close** (checked-off notes).
+- **Headline:** "Routine, die im Alltag funktioniert."
+- **Support line:** "AURANEM als fester Schritt für mehr Klarheit im Tagesablauf."
+- **CTA:** "Routine starten"
+- **Style intent:** Authentic, premium, low-friction scanning; one coherent story panel.
+- **Compliance-safe angle:** consistency + general wellbeing routine support; no guaranteed outcomes.
+
+### Approach B — "Clarity Blueprint" (structured infographic section)
+- **Production stack (free/open):** Penpot/Figma free + open icon set + CSS gradient mock.
+- **Composition style:** Central bottle with four orbiting clarity blocks: **Morgen-Start**, **Fokusfenster**, **Pausenrhythmus**, **Tagesabschluss**.
+- **Headline:** "Klarheit mit System."
+- **Support line:** "Ein einfacher Ablauf für einen strukturierteren Tag."
+- **CTA:** "Mehr erfahren"
+- **Style intent:** High readability and design order, strong hierarchy.
+- **Compliance-safe angle:** daily structure framing only.
+
+### 2) Scorecard comparison
+
+| Metric | Approach A (Proof-in-Routine Strip) | Approach B (Clarity Blueprint) |
+| :--- | :--- | :--- |
+| **Hook** | 8/10 — real-life sequence creates quick relevance | 7/10 — clean but less emotionally immediate |
+| **Readability** | 9/10 — left-to-right progression is easy to parse | 9/10 — very clear modular layout |
+| **Authenticity** | 9/10 — real photos increase trust | 7/10 — more conceptual, slightly template-like |
+| **Brand Fit** | 9/10 — strongly supports "Routine statt Chaos" | 8/10 — aligns with clarity, less human warmth |
+| **CTA** | 8/10 — direct, action-oriented | 8/10 — clear but lower urgency |
+| **TOTAL** | **43/50** | **39/50** |
+
+### 3) Decision
+- **Winner kept:** Approach A — "Proof-in-Routine Strip" (**43/50**)
+- **Loser archived:** Approach B — "Clarity Blueprint" (**39/50**)
+- **Why loser lost:** Excellent structure/readability, but lower perceived authenticity and weaker emotional trust signal for MOF landing behavior.
+
+### 4) Compliance and constraints check
+- Free/open-first tools used in concepting ✅
+- Supplement-safe language (no cure/disease/guarantee claims) ✅
+- No slideshow feel (single coherent LP section narrative) ✅
+- No external publishing performed ✅
+
+### 5) Next iteration trigger
+If section click-through to PDP is < 2.4% after 800 sessions, keep visual structure and test two headline variants:
+1) "Routine statt Reibung im Alltag."
+2) "Mehr Klarheit durch einen festen Morgen-Start."
