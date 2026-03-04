@@ -11,6 +11,7 @@
 
 2. **Set cap/lid to white (priority requirement)**
    - Applied a targeted cap correction (desaturation + brightness lift + soft rim highlight) so the handheld product reads as a **white-cap supplement jar**.
+   - Finalized with an extra white-cap enforcement pass on both outputs to ensure the lid reads clearly white in both aspect ratios.
    - Maintains realistic shading and avoids hard retouch edges.
 
 3. **Kept clean cylindrical white-label look**
