@@ -1,0 +1,24 @@
+[1:v]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,setsar=1,format=yuv420p,trim=duration=1.6,setpts=PTS-STARTPTS[ihook];
+[0:v]split=5[b1][b2][b3][b4][b5];
+[b1]trim=start=0.2:end=2.9,setpts=PTS-STARTPTS,scale=1260:2240,crop=1080:1920:130:120,eq=contrast=1.03:saturation=1.05[v1];
+[b2]trim=start=3.3:end=5.7,setpts=PTS-STARTPTS,scale=1280:2276,crop=1080:1920:70:180,eq=contrast=1.04:saturation=1.08[v2];
+[b3]trim=start=6.0:end=8.7,setpts=PTS-STARTPTS,scale=1250:2225,crop=1080:1920:150:90,eq=contrast=1.02:saturation=1.06[v3];
+[b4]trim=start=9.1:end=11.9,setpts=PTS-STARTPTS,scale=1270:2258,crop=1080:1920:40:150,eq=contrast=1.03:saturation=1.07[v4];
+[b5]trim=start=12.2:end=15.4,setpts=PTS-STARTPTS,scale=1240:2204,crop=1080:1920:100:140,eq=contrast=1.05:saturation=1.09[v5];
+[2:v]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,setsar=1,format=yuv420p,trim=duration=3.2,setpts=PTS-STARTPTS[cta];
+[ihook][v1][v2][v3][v4][v5][cta]concat=n=7:v=1:a=0[base];
+[base]format=yuv420p,
+drawbox=x=0:y=0:w=iw:h=230:color=black@0.88:t=fill:enable='lt(t,1.6)',
+drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf:text='Still waking up drained?':fontcolor=white:fontsize=64:x=(w-text_w)/2:y=74:enable='lt(t,1.6)',
+drawbox=x=0:y=0:w=iw:h=160:color=black@0.55:t=fill:enable='between(t,1.6,15.4)',
+drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf:text='Morning ritual, simplified':fontcolor=white:fontsize=54:x=(w-text_w)/2:y=52:enable='between(t,1.6,4.8)',
+drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf:text='Greens + adaptogens in one scoop':fontcolor=white:fontsize=50:x=(w-text_w)/2:y=52:enable='between(t,4.8,8.0)',
+drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf:text='Plant-based formula, zero fuss':fontcolor=white:fontsize=50:x=(w-text_w)/2:y=52:enable='between(t,8.0,11.6)',
+drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf:text='Mix. Sip. Move into your day.':fontcolor=white:fontsize=50:x=(w-text_w)/2:y=52:enable='between(t,11.6,15.4)',
+drawbox=x=70:y=1560:w=940:h=120:color=black@0.46:t=fill:enable='between(t,1.6,15.4)',
+drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='Food supplement. Not intended to diagnose, treat, cure, or prevent disease.':fontcolor=white:fontsize=32:x=(w-text_w)/2:y=1600:enable='between(t,1.6,15.4)',
+drawbox=x=0:y=0:w=iw:h=ih:color=black@0.48:t=fill:enable='gte(t,15.4)',
+drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf:text='Start your 14-day reset':fontcolor=white:fontsize=76:x=(w-text_w)/2:y=700:enable='gte(t,15.4)',
+drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='Daily wellness support by AURANEM':fontcolor=white:fontsize=46:x=(w-text_w)/2:y=820:enable='gte(t,15.4)',
+drawbox=x=230:y=960:w=620:h=130:color=white@0.95:t=fill:enable='gte(t,15.4)',
+drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf:text='See AURANEM':fontcolor=black:fontsize=64:x=(w-text_w)/2:y=995:enable='gte(t,15.4)'[v]

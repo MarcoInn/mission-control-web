@@ -1,0 +1,24 @@
+# UGC Free v3 NEW CUT — Exact Differences vs v2
+
+- **New output file:** `ugc_free_v3_newcut.mp4` (v2 file not reused).
+- **Different duration:** v2 = **18.0s**; v3 = **18.6s**.
+- **Different timeline structure:**
+  - v2 used 6 segments at `0–2, 2–5, 5–8, 8–11, 11–14, 14–18`.
+  - v3 uses a new 7-part sequence: `0–1.6` (image hook), `1.6–4.3`, `4.3–6.7`, `6.7–9.4`, `9.4–12.2`, `12.2–15.4`, `15.4–18.6` (CTA card).
+- **New opening hook copy:**
+  - v2: “Stop scrolling. Better mornings start now”
+  - v3: “Still waking up drained?”
+- **New mid-video caption copy (all replaced):**
+  - “Morning ritual, simplified”
+  - “Greens + adaptogens in one scoop”
+  - “Plant-based formula, zero fuss”
+  - “Mix. Sip. Move into your day.”
+- **New CTA wording (different end card):**
+  - v2 CTA: “Build a better morning” + “Shop now”
+  - v3 CTA: “Start your 14-day reset” + “See AURANEM”
+- **Different visual construction:** v3 intentionally inserts still-image hero segments at both start and end (from `HERO_MASTER_V3_1080x1350.png` and `HERO_MASTER_V2_1920x1080.png`), not present as this arrangement in v2.
+- **Different crop/scene timing map:** all crop windows and cut points were rebuilt for v3.
+- **New background audio bed:**
+  - v2 audio: `ugc_v2_music_original.m4a`
+  - v3 audio: `ugc_v3_music_original.m4a` (newly synthesized original track).
+- **Compliance-safe language retained:** includes non-disease disclaimer text for supplement safety framing.
