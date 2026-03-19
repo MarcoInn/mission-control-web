@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 280" role="img" aria-labelledby="t d">
+<title id="t">Final CTA decision moment</title><desc id="d">Calm decision scene with two path cards converging to action.</desc>
+<rect width="1200" height="280" fill="#f3ecdf"/>
+<rect x="80" y="60" width="340" height="160" rx="20" fill="#e8deca"/>
+<text x="250" y="130" text-anchor="middle" font-family="Manrope" font-size="26" fill="#534632">Starter</text>
+<text x="250" y="165" text-anchor="middle" font-family="Manrope" font-size="18" fill="#6d5f4a">30 Tage klar starten</text>
+<rect x="440" y="60" width="340" height="160" rx="20" fill="#e8deca"/>
+<text x="610" y="130" text-anchor="middle" font-family="Manrope" font-size="26" fill="#534632">Plus</text>
+<text x="610" y="165" text-anchor="middle" font-family="Manrope" font-size="18" fill="#6d5f4a">60 Tage planbar bleiben</text>
+<path d="M790 140h180" stroke="#9d8967" stroke-width="8" stroke-linecap="round"/>
+<path d="M955 118l40 22-40 22" fill="none" stroke="#9d8967" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1000" y="82" width="150" height="116" rx="18" fill="#d9c8a7"/>
+<text x="1075" y="142" text-anchor="middle" font-family="Manrope" font-size="22" fill="#4f4332">Jetzt</text>
+<text x="1075" y="168" text-anchor="middle" font-family="Manrope" font-size="22" fill="#4f4332">entscheiden</text>
+</svg>

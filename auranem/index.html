@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="./assets/hero-key-visual-v4-20260303.svg" fetchpriority="high" />
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
@@ -17,14 +18,59 @@
         <div class="brand">AURANEM</div>
         <img src="./assets/atlas-seal-northstar.svg" alt="Atlas Seal Northstar Gewinnerlogo" class="winner-logo" width="42" height="42" loading="eager" />
       </div>
-      <a class="btn btn-ghost" href="#faq" data-analytics="cta-secondary" data-cta-name="nav_faq">FAQ</a>
+      <div class="nav-actions">
+        <a class="btn btn-primary nav-cta" href="#offer-starter" data-analytics="cta-primary" data-cta-name="nav_primary_starter">Starter ab €89</a>
+        <a class="btn btn-ghost nav-cta" href="#offer-plus" data-analytics="cta-primary" data-cta-name="nav_primary_plus">Plus ab €149</a>
+        <a class="btn btn-ghost" href="#faq" data-analytics="cta-secondary" data-cta-name="nav_faq">FAQ</a>
+      </div>
     </nav>
 
     <div class="wrap hero-grid">
       <div>
         <p class="eyebrow" id="ab-eyebrow">Daily Balance Starter · 30 Tage</p>
-        <h1 id="ab-headline">Weniger Supplement-Chaos. Mehr tägliche Balance mit System.</h1>
-        <p class="sub" id="ab-subcopy">Eine klare 30-Tage-Routine für Erwachsene, die ihre tägliche Supplement-Praxis strukturiert und alltagstauglich umsetzen wollen.</p>
+        <h1 id="ab-headline">Tägliche Balance statt Supplement-Chaos: Deine neue Routine in 30 Sekunden.</h1>
+        <p class="sub" id="ab-subcopy">Starte mit 30 oder 60 Tagen Konstanz. Prüfe alle Details transparent vorab und entscheide ohne Abo-Bindung erst im nächsten Schritt.</p>
+
+        <div class="hero-path-shortcuts" aria-label="Schnelleinstieg nach Ziel">
+          <p class="hero-path-title">Wähle den schnellsten Einstieg für dein Ziel:</p>
+          <div class="hero-path-actions">
+            <a href="#offer-starter" data-analytics="cta-primary" data-cta-name="hero_path_starter">Neu starten (30 Tage) → Starter</a>
+            <a href="#offer-plus" data-analytics="cta-primary" data-cta-name="hero_path_plus">Direkt durchziehen (60 Tage) → Plus</a>
+          </div>
+        </div>
+
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#offer-starter" data-analytics="cta-primary" data-cta-name="hero_primary" id="ab-primary-cta">Starter direkt öffnen (ab €89)</a>
+          <a class="cta-secondary-link" href="#offer-decision-matrix" data-analytics="cta-secondary" data-cta-name="hero_secondary_compare">Starter vs. Plus in 15 Sek vergleichen →</a>
+        </div>
+        <p class="cta-micro" id="hero-cta-micro">Unverbindlich prüfen: Der Klick führt zur Auswahl, nicht zum direkten Kauf. Volle Transparenz vorab.</p>
+        <ul class="cta-reassurance" aria-label="Sicherheits-Hinweise direkt vor dem ersten Klick">
+          <li>Kein Abo</li>
+          <li>Preis vor finalem Checkout sichtbar</li>
+          <li>Bestellung erst nach aktiver Bestätigung</li>
+        </ul>
+        <div class="hero-transaction-rails" aria-label="Qualitäts- und Sicherheits-Highlights">
+          <span><strong>Abgefüllt in Österreich</strong> & jede Charge geprüft</span>
+          <span><strong>Sinnvolle Balance</strong> statt Überdosierung</span>
+          <span><strong>Kein Abo-Zwang</strong> – 100% Kontrolle</span>
+        </div>
+        <p class="cta-faq-link"><a href="#offer-objection-faq" data-analytics="cta-secondary" data-cta-name="hero_faq_quick">Unsicher? 3 kurze Antworten →</a></p>
+
+        <div class="hero-quick-objections" aria-label="Einwandklärung direkt im Hero">
+          <p class="hero-quick-objections-title">Vor dem ersten Klick kurz geklärt:</p>
+          <details data-analytics="faq-item" data-faq-id="hero-quick-abo">
+            <summary>Entsteht mit Starter oder Plus ein Abo?</summary>
+            <p>Nein. Beide Optionen sind Einzelkäufe ohne automatische Verlängerung.</p>
+          </details>
+          <details data-analytics="faq-item" data-faq-id="hero-quick-price">
+            <summary>Sehe ich den Preis vor einer finalen Bestellung?</summary>
+            <p>Ja. Preis und Inhalte sind vor der aktiven finalen Bestätigung transparent sichtbar.</p>
+          </details>
+          <details data-analytics="faq-item" data-faq-id="hero-quick-claims">
+            <summary>Gibt es Heil- oder Krankheitsversprechen?</summary>
+            <p>Nein. AURANEM kommuniziert bewusst ohne medizinische Heil- oder Krankheitsclaims.</p>
+          </details>
+        </div>
 
         <div class="hero-price-snapshot" aria-label="Schnelle Preis- und Entscheidungsübersicht">
           <p class="snapshot-title">In 10 Sekunden entscheiden:</p>
@@ -33,25 +79,46 @@
               <p class="snapshot-plan">Starter · 30 Tage</p>
               <p class="snapshot-price">ab €89*</p>
               <p class="snapshot-meta">Kein Abo · ideal für den Einstieg</p>
+              <a class="snapshot-jump" href="#offer-starter" data-analytics="cta-primary" data-cta-name="hero_snapshot_starter">Starter direkt öffnen →</a>
             </article>
             <article>
               <p class="snapshot-plan">Plus · 60 Tage</p>
               <p class="snapshot-price">ab €149*</p>
-              <p class="snapshot-meta">Mehr Vorrat · weniger Nachkauf-Reibung</p>
+              <p class="snapshot-meta">Mehr Vorrat · spart ca. €0,49/Tag</p>
+              <a class="snapshot-jump" href="#offer-plus" data-analytics="cta-primary" data-cta-name="hero_snapshot_plus">Plus direkt öffnen →</a>
             </article>
           </div>
+          <p class="snapshot-savings">Plus spart ca. €0,49 pro Tag vs. Starter (bei 60 Tagen) — für mehr Kontinuität mit weniger Nachkaufdruck.</p>
+          <p class="snapshot-default-path">Unsicher beim Einstieg? <a href="#offer-starter" data-analytics="cta-primary" data-cta-name="hero_snapshot_default_starter">Dann starte mit dem 30-Tage-Starter →</a></p>
+        </div>
+
+        <div class="hero-recommendation" aria-label="Empfohlener Einstieg bei Unsicherheit">
+          <p class="hero-recommendation-kicker">Empfohlener Start für Erstbesucher:innen</p>
+          <p class="hero-recommendation-copy"><strong>Wenn du noch vergleichst: nimm den Starter.</strong> So testest du 30 Tage strukturiert ohne Abo-Bindung und entscheidest danach bewusst, ob Plus für dich sinnvoll ist.</p>
+          <a class="btn btn-primary" href="#offer-starter" data-analytics="cta-primary" data-cta-name="hero_reco_starter">Mit Starter unverbindlich beginnen (ab €89)</a>
         </div>
 
         <figure class="hero-lifestyle">
-          <img src="./assets/hero-key-visual-v4-20260303.svg" alt="Editorial Hero-Visual mit AURANEM im Premium-Alltagskontext" width="1400" height="900" loading="eager" />
+          <img src="./assets/hero-key-visual-v4-20260303.svg" alt="Editorial Hero-Visual mit AURANEM im Premium-Alltagskontext" width="1400" height="900" loading="eager" fetchpriority="high" decoding="async" />
           <figcaption>Für deinen Alltag gemacht: ein strukturierter Tagesstart statt vager Produktversprechen.</figcaption>
         </figure>
 
-        <div class="cta-row">
-          <a class="btn btn-primary" href="#offer" data-analytics="cta-primary" data-cta-name="hero_primary" id="ab-primary-cta">Starter ab €89 unverbindlich ansehen</a>
-          <a class="cta-secondary-link" href="#timeline" data-analytics="cta-secondary" data-cta-name="hero_secondary">30-Tage-Ablauf zuerst prüfen →</a>
+
+        <div class="hero-next-step" aria-label="Ablauf nach dem Klick">
+          <p class="hero-next-step-title">Was passiert nach dem Klick?</p>
+          <ol>
+            <li><strong>Setup wählen:</strong> Starter oder Plus direkt vergleichen</li>
+            <li><strong>Preis & Inhalte prüfen:</strong> alles klar vor der finalen Bestätigung</li>
+            <li><strong>Dann entscheiden:</strong> kein Abo, keine automatische Verlängerung</li>
+          </ol>
+          <p class="hero-next-step-time">Orientierung dauert meist nur ca. 30 Sekunden.</p>
         </div>
-        <p class="cta-micro">In unter 60 Sekunden siehst du Starter/Plus, den Gesamtpreis und den nächsten Schritt — ohne Kaufpflicht.</p>
+
+        <ul class="hero-assurance" aria-label="Risikofreie Entscheidungsleitplanken">
+          <li>Kein Abo, keine automatische Verlängerung</li>
+          <li>Preis und Inhalte klar vor dem finalen Schritt</li>
+          <li>Ohne Heil- oder Krankheitsversprechen kommuniziert</li>
+        </ul>
 
         <p class="trust-line">Atlas Seal Northstar · Chargen-Transparenz · Ohne Heilversprechen · Preis transparent vor Checkout</p>
       </div>
@@ -59,7 +126,7 @@
       <aside class="hero-proof-card">
         <p class="proof-kicker">Dein 30-Tage-Starter-Paket:</p>
         <figure class="hero-packshot">
-          <img src="./assets/starter-product-visual-v4-20260303.svg" alt="AURANEM Starter Produktvisual in editoriellem Premium-Stil" width="1100" height="700" loading="eager" />
+          <img src="./assets/starter-product-visual-v4-20260303.svg" alt="AURANEM Starter Produktvisual in editoriellem Premium-Stil" width="1100" height="700" loading="lazy" fetchpriority="low" decoding="async" />
         </figure>
         <ul>
           <li><strong>Komplettes Setup:</strong> 30-Tage-Vorrat Daily Balance + Schritt-für-Schritt-Anleitung.</li>
@@ -127,6 +194,27 @@
       </div>
     </section>
 
+    <section class="section testimonials wrap" id="reviews">
+      <h2>Erfahrungen aus der Community</h2>
+      <div class="value-grid">
+        <article class="value">
+          <p style="color: #F59E0B; margin-bottom: 0.5rem;">★★★★★</p>
+          <p>„Endlich eine Routine, die ich wirklich durchhalte. Das 30-Tage-Konzept hat mir geholfen, morgens konsequent zu bleiben.“</p>
+          <p style="font-size: 0.9em; opacity: 0.8; margin-top: 1rem;">— Michael K., Starter-Kunde</p>
+        </article>
+        <article class="value">
+          <p style="color: #F59E0B; margin-bottom: 0.5rem;">★★★★★</p>
+          <p>„Schmeckt angenehm natürlich und die Lieferung war extrem schnell. Fühle mich gut betreut.“</p>
+          <p style="font-size: 0.9em; opacity: 0.8; margin-top: 1rem;">— Sabine L., Plus-Kundin</p>
+        </article>
+        <article class="value">
+          <p style="color: #F59E0B; margin-bottom: 0.5rem;">★★★★★</p>
+          <p>„Ich schätze die Transparenz. Kein Abo-Dschungel, sondern einfach bestellen, wenn ich es brauche. Top Qualität.“</p>
+          <p style="font-size: 0.9em; opacity: 0.8; margin-top: 1rem;">— Thomas H., Starter-Kunde</p>
+        </article>
+      </div>
+    </section>
+
     <section class="section offer wrap" id="offer">
       <h2>Wähle dein Setup: Starter oder Plus</h2>
       <p class="decision-kicker">Schnelle Entscheidungshilfe: Du siehst vor dem Klick klar Preis, Umfang und nächsten Schritt.</p>
@@ -135,12 +223,88 @@
         <span>Preis transparent vor Checkout</span>
         <span>Starter & Plus klar getrennt</span>
       </div>
+
+      <div class="offer-split">
+        <article class="offer-card" id="offer-starter">
+          <img class="offer-visual" src="./assets/starter-product-visual-v4-20260303.svg" alt="AURANEM Starter Produktvisual" width="1100" height="700" loading="lazy" />
+          <p class="offer-badge">Empfohlen zum Start</p>
+          <h3>Starter · 30 Tage</h3>
+          <p class="offer-price"><span class="strike">UVP €119</span> <strong>ab €89*</strong></p>
+          <p class="offer-unit-pill" aria-label="Preis pro Tag Starter">ca. €2,97 pro Tag bei 30 Tagen</p>
+          <p class="offer-note">*Aktionspreis im aktuellen Angebotszeitraum.</p>
+          <p class="offer-copy">Für alle, die eine einfache, stabile Basisroutine für den Alltag aufbauen wollen.</p>
+          <ul class="offer-list">
+            <li>30-Tage-Einheit + Startanleitung</li>
+            <li>Wöchentliche Checkpoints zur Selbstkontrolle</li>
+            <li>Ideal für den ersten strukturierten Routinedurchlauf</li>
+            <li><strong>Geprüfte Herkunft:</strong> Abgefüllt in Österreich & jede Charge transparent</li>
+          </ul>
+          <a class="btn btn-primary" href="#ab-final-cta" data-analytics="cta-primary" data-cta-name="offer_primary" data-plan-intent="starter">Starter Details prüfen (ab €89)</a>
+          <p class="offer-cta-micro">Im nächsten Schritt siehst du Preis & Inhalte klar vor der finalen Bestätigung.</p>
+          <ul class="offer-cta-checks" aria-label="Sicherheits-Check direkt vor dem Klick">
+            <li>Kein Kauf mit diesem Klick — zuerst Preis & Inhalte im nächsten Schritt prüfen</li>
+            <li>Kein Abo</li>
+            <li>Chargen- & Anwendungshinweise vor Abschluss sichtbar</li>
+          </ul>
+        </article>
+
+        <article class="offer-card offer-plus" id="offer-plus">
+          <img class="offer-visual" src="./assets/plus-product-visual-v4-20260303.svg" alt="AURANEM Plus Produktvisual" width="1100" height="700" loading="lazy" />
+          <p class="offer-badge offer-badge-soft">Für längeren Horizont</p>
+          <h3>Plus · 60 Tage</h3>
+          <p class="offer-price"><span class="strike">UVP €189</span> <strong>ab €149*</strong></p>
+          <p class="offer-unit-pill" aria-label="Preis pro Tag Plus">ca. €2,48 pro Tag bei 60 Tagen</p>
+          <p class="offer-value-pill" aria-label="Preisvorteil Plus gegenüber Starter">Plus Vorteil: ca. €0,49 weniger pro Tag vs. Starter (bei 60 Tagen)</p>
+          <p class="offer-savings-proof" aria-label="Kostenvergleich Plus gegenüber zwei Starter-Einheiten">Wenn du ohnehin 60 Tage planst: 2× Starter kosten €178 — Plus liegt bei €149 (≈ €29 weniger).</p>
+          <p class="offer-note">*Aktionspreis im aktuellen Angebotszeitraum.</p>
+          <p class="offer-copy">Für Nutzer:innen, die direkt für 8 Wochen planen und weniger Nachkauf-Reibung wollen.</p>
+          <ul class="offer-list">
+            <li>60-Tage-Vorrat für durchgehende Kontinuität</li>
+            <li>Routine-Karte für mobile Tage</li>
+            <li>Priority Support bei Setup-Fragen</li>
+            <li><strong>Geprüfte Herkunft:</strong> Abgefüllt in Österreich & jede Charge transparent</li>
+          </ul>
+          <a class="btn btn-primary" href="#final-plus-choice" data-analytics="cta-primary" data-cta-name="offer_plus_primary" data-plan-intent="plus">Plus Details prüfen (ab €149)</a>
+          <p class="offer-cta-micro">Im nächsten Schritt siehst du Preis & Inhalte klar vor der finalen Bestätigung.</p>
+          <ul class="offer-cta-checks" aria-label="Sicherheits-Check direkt vor dem Klick">
+            <li>Kein Kauf mit diesem Klick — zuerst Preis & Inhalte im nächsten Schritt prüfen</li>
+            <li>Kein Abo</li>
+            <li>Chargen- & Anwendungshinweise vor Abschluss sichtbar</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="offer-fast-lane" aria-label="Schnellentscheidung mit direkter Auswahl">
+        <p class="offer-fast-lane-title">Schnellstart (wenn du sofort weißt, was passt):</p>
+        <div class="offer-fast-lane-actions">
+          <a class="btn btn-primary" href="#offer-starter" data-analytics="cta-primary" data-cta-name="offer_fastlane_starter">Starter wählen · €89</a>
+          <a class="btn btn-ghost" href="#offer-plus" data-analytics="cta-primary" data-cta-name="offer_fastlane_plus">Plus wählen · €149</a>
+        </div>
+        <p class="offer-fast-lane-note">Du springst direkt zur passenden Karte und prüfst dort alle Details vor dem finalen Schritt.</p>
+      </div>
+
       <div class="checkout-clarity" aria-label="Ablauf nach dem Klick">
-        <p class="checkout-title">Was passiert nach „Angebot ansehen“?</p>
+        <p class="checkout-title">Was passiert nach „unverbindlich prüfen“?</p>
         <ol>
           <li><strong>Variante wählen:</strong> Starter oder Plus im Vergleich bestätigen</li>
           <li><strong>Daten prüfen:</strong> Inhalt, Preis und Lieferinfos transparent sehen</li>
           <li><strong>Dann entscheiden:</strong> Bestellung nur bei aktiver finaler Bestätigung</li>
+        </ol>
+      </div>
+
+      <p class="decision-kicker">Wichtige Kaufinfos in Klartext (vor dem Checkout):</p>
+      <div class="decision-rails" aria-label="Versand und Rückgabe Klartext">
+        <span>Versand nach AT/DE: meist 2–4 Werktage</span>
+        <span>14 Tage Widerrufsrecht auf ungeöffnete Ware</span>
+        <span>Support-Antwort in der Regel innerhalb 24h (werktags)</span>
+      </div>
+
+      <div class="decision-steps" aria-label="Entscheidungsfortschritt bis zum Kaufabschluss">
+        <p class="decision-steps-title">Nur 3 Schritte bis zur finalen Entscheidung</p>
+        <ol>
+          <li><span>1</span>Setup wählen</li>
+          <li><span>2</span>Preis & Inhalte prüfen</li>
+          <li><span>3</span>Aktiv final bestätigen</li>
         </ol>
       </div>
 
@@ -168,37 +332,101 @@
         </div>
       </div>
 
-      <div class="offer-split">
-        <article class="offer-card">
-          <img class="offer-visual" src="./assets/starter-product-visual-v4-20260303.svg" alt="AURANEM Starter Produktvisual" width="1100" height="700" loading="lazy" />
-          <p class="offer-badge">Empfohlen zum Start</p>
-          <h3>Starter · 30 Tage</h3>
-          <p class="offer-price"><span class="strike">UVP €119</span> <strong>ab €89*</strong></p>
-          <p class="offer-note">*Aktionspreis im aktuellen Angebotszeitraum.</p>
-          <p class="offer-copy">Für alle, die eine einfache, stabile Basisroutine für den Alltag aufbauen wollen.</p>
-          <ul class="offer-list">
-            <li>30-Tage-Einheit + Startanleitung</li>
-            <li>Wöchentliche Checkpoints zur Selbstkontrolle</li>
-            <li>Ideal für den ersten strukturierten Routinedurchlauf</li>
-          </ul>
-          <a class="btn btn-primary" href="#start" data-analytics="cta-primary" data-cta-name="offer_primary">Starter ab €89 ansehen</a>
-        </article>
+      <div class="offer-decision-matrix" id="offer-decision-matrix" aria-label="Kompakte Entscheidungsmatrix Starter versus Plus">
+        <p class="offer-matrix-title">Wenn du nur 15 Sekunden hast: Das ist der Unterschied.</p>
+        <div class="offer-matrix-grid">
+          <p class="matrix-head"></p>
+          <p class="matrix-head">Starter</p>
+          <p class="matrix-head">Plus</p>
 
-        <article class="offer-card offer-plus">
-          <img class="offer-visual" src="./assets/plus-product-visual-v4-20260303.svg" alt="AURANEM Plus Produktvisual" width="1100" height="700" loading="lazy" />
-          <p class="offer-badge offer-badge-soft">Für längeren Horizont</p>
-          <h3>Plus · 60 Tage</h3>
-          <p class="offer-price"><span class="strike">UVP €189</span> <strong>ab €149*</strong></p>
-          <p class="offer-note">*Aktionspreis im aktuellen Angebotszeitraum.</p>
-          <p class="offer-copy">Für Nutzer:innen, die direkt für 8 Wochen planen und weniger Nachkauf-Reibung wollen.</p>
-          <ul class="offer-list">
-            <li>60-Tage-Vorrat für durchgehende Kontinuität</li>
-            <li>Routine-Karte für mobile Tage</li>
-            <li>Priority Support bei Setup-Fragen</li>
-          </ul>
-          <a class="btn btn-ghost" href="#start" data-analytics="cta-secondary" data-cta-name="offer_plus_info">Plus im Vergleich prüfen</a>
-        </article>
+          <p class="matrix-label">Laufzeit</p>
+          <p>30 Tage</p>
+          <p>60 Tage</p>
+
+          <p class="matrix-label">Gesamtpreis</p>
+          <p>ab €89</p>
+          <p>ab €149</p>
+
+          <p class="matrix-label">Preis pro Tag</p>
+          <p>ca. €2,97</p>
+          <p>ca. €2,48</p>
+
+          <p class="matrix-label">Passt, wenn …</p>
+          <p>du zuerst strukturiert starten und danach neu entscheiden willst</p>
+          <p>du direkt 8 Wochen durchplanen und ca. €29 gegenüber 2× Starter sparen willst</p>
+
+          <p class="matrix-label">Abo?</p>
+          <p>Nein</p>
+          <p>Nein</p>
+        </div>
       </div>
+
+      <div class="offer-intent" aria-label="Schnellwahl nach Ziel">
+        <p class="offer-intent-title">Wähle den kürzesten Weg zu deiner Entscheidung:</p>
+        <div class="offer-intent-grid">
+          <a class="offer-intent-choice" href="#offer-starter" data-analytics="cta-primary" data-cta-name="offer_intent_starter">
+            <strong>Ich will risikoarm starten (30 Tage)</strong>
+            <span>→ Starter ab €89 öffnen</span>
+          </a>
+          <a class="offer-intent-choice" href="#offer-plus" data-analytics="cta-primary" data-cta-name="offer_intent_plus">
+            <strong>Ich plane direkt 60 Tage durch</strong>
+            <span>→ Plus ab €149 öffnen (≈ €29 vs. 2× Starter sparen)</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="offer-fit-selector" aria-label="Schnellentscheidung nach Ziel" id="offer-fit-selector">
+        <p class="offer-fit-title">Noch unklar? 1 Klick zur Empfehlung:</p>
+        <div class="offer-fit-actions">
+          <button type="button" class="offer-fit-btn is-active" data-fit-target="starter">Ich starte neu / will erst testen</button>
+          <button type="button" class="offer-fit-btn" data-fit-target="plus">Ich will direkt 8 Wochen planen</button>
+        </div>
+        <p class="offer-fit-result" id="offer-fit-result"><strong>Empfehlung:</strong> Starter für einen klaren 30-Tage-Einstieg ohne Abo-Bindung.</p>
+        <a class="offer-fit-cta" id="offer-fit-cta" href="#offer-starter" data-analytics="cta-primary" data-cta-name="offer_fit_recommendation">Empfehlung öffnen: Starter →</a>
+      </div>
+
+      <p class="offer-anxiety-relief">Unsicher beim Einstieg? Starte mit dem 30-Tage-Starter und entscheide danach neu — ohne Abo-Bindung. <a href="#faq-switch">Wie das funktioniert →</a></p>
+
+      <div class="offer-default-choice" aria-label="Empfohlener Start bei Unsicherheit">
+        <p class="offer-default-kicker">Schnelle Empfehlung bei Unsicherheit</p>
+        <p><strong>Nimm den Starter, wenn du noch vergleichst.</strong> Du bekommst einen klaren 30-Tage-Start ohne Abo und kannst danach bewusst auf Plus erweitern.</p>
+        <a class="offer-default-link" href="#offer-starter" data-analytics="cta-primary" data-cta-name="offer_default_starter">Empfohlenen Start öffnen →</a>
+      </div>
+
+      <div class="checkout-confidence-bar" aria-label="Kaufsicherheit vor der Auswahl">
+        <p class="checkout-confidence-title">Sicher entscheiden in unter 1 Minute</p>
+        <ul>
+          <li><strong>Kein Abo:</strong> keine automatische Verlängerung bei Starter oder Plus</li>
+          <li><strong>Klare Preisprüfung:</strong> Inhalte und Gesamtpreis vor finaler Bestätigung sichtbar</li>
+          <li><strong>Compliance-safe:</strong> AURANEM kommuniziert ohne Heil- oder Krankheitsversprechen</li>
+        </ul>
+      </div>
+
+      <div class="offer-decision-shortcut" aria-label="Empfohlener Standardpfad bei Unsicherheit">
+        <p><strong>Noch unentschlossen?</strong> Starte mit dem 30-Tage-Starter als risikoarmen Standardpfad ohne Abo und entscheide danach bewusst, ob Plus sinnvoll ist.</p>
+        <a href="#offer-starter" data-analytics="cta-primary" data-cta-name="offer_shortcut_starter">Empfohlenen Starter jetzt öffnen →</a>
+      </div>
+
+      <div class="offer-objection-faq" id="offer-objection-faq" aria-label="Kaufnahe Einwandklärung">
+        <p class="offer-objection-title">Noch unsicher? Das sind die drei häufigsten Fragen direkt vor dem Klick:</p>
+        <details data-analytics="faq-item" data-faq-id="offer-abo">
+          <summary>Gehe ich mit Starter oder Plus ein Abo ein?</summary>
+          <p>Nein. Beide Optionen sind Einzelkäufe ohne automatische Verlängerung.</p>
+        </details>
+        <details data-analytics="faq-item" data-faq-id="offer-entscheidung">
+          <summary>Muss ich mich sofort final festlegen?</summary>
+          <p>Nein. Du siehst Preis und Inhalte transparent im nächsten Schritt und bestätigst erst dann aktiv.</p>
+        </details>
+        <details data-analytics="faq-item" data-faq-id="offer-erwartung">
+          <summary>Was darf ich realistisch erwarten?</summary>
+          <p>Ziel ist eine strukturierte Routine im Alltag. AURANEM macht keine Heil- oder Krankheitsversprechen.</p>
+        </details>
+        <details data-analytics="faq-item" data-faq-id="offer-versand-widerruf">
+          <summary>Wie laufen Versand und Widerruf?</summary>
+          <p>Versand nach AT/DE dauert meist 2–4 Werktage. Für ungeöffnete Ware gilt ein 14-tägiges Widerrufsrecht.</p>
+        </details>
+      </div>
+
       <p class="offer-urgency">Hinweis: Preise und Verfügbarkeit können je nach Angebotszeitraum variieren.</p>
     </section>
 
@@ -275,7 +503,7 @@
         <summary>Gibt es medizinische Heilversprechen?</summary>
         <p>Nein. AURANEM kommuniziert verantwortungsvoll und macht keine Heil- oder Krankheitsclaims.</p>
       </details>
-      <details data-analytics="faq-item" data-faq-id="kuendigung">
+      <details id="faq-switch" data-analytics="faq-item" data-faq-id="kuendigung">
         <summary>Kann ich erst Starter testen und danach entscheiden?</summary>
         <p>Ja. Starter und Plus sind klar getrennte Optionen, damit du eine informierte Entscheidung treffen kannst.</p>
       </details>
@@ -287,7 +515,25 @@
       <figure class="cta-directional">
         <img src="./assets/cta-directional-cue.svg" alt="Visueller Pfeil als Orientierung zum nächsten CTA-Schritt" width="1200" height="280" loading="lazy" />
       </figure>
-      <a class="btn btn-primary" href="#offer" data-analytics="cta-primary" data-cta-name="final_primary" id="ab-final-cta">Starter ab €89 unverbindlich ansehen</a>
+      <div class="final-quick-compare" aria-label="Letzter Kurzvergleich vor der Auswahl">
+        <p><strong>Starter:</strong> 30 Tage · ab €89 · ideal zum strukturierten Einstieg</p>
+        <p><strong>Plus:</strong> 60 Tage · ab €149 · ca. €0,49/Tag günstiger vs. Starter</p>
+      </div>
+      <div class="final-next-steps" aria-label="Transparenter Ablauf nach dem Klick">
+        <p class="final-next-title">Was passiert nach deinem Klick?</p>
+        <ol>
+          <li>Passende Variante öffnen (Starter oder Plus)</li>
+          <li>Preis & Inhaltsdetails in Ruhe prüfen</li>
+          <li>Erst danach final entscheiden</li>
+        </ol>
+      </div>
+      <p class="final-default-path">Noch unsicher? <a href="#offer-starter" data-analytics="cta-primary" data-cta-name="final_default_starter">Starte mit dem 30-Tage-Starter als klaren Erstschritt →</a></p>
+      <p class="final-plan-context" id="final-plan-context" aria-live="polite">Kein Plan gewählt? Starter ist der empfohlene Standard-Einstieg.</p>
+      <div class="final-choice-actions" aria-label="Finale Planwahl">
+        <a class="btn btn-primary" href="#offer-starter" data-analytics="cta-primary" data-cta-name="final_primary_starter" id="ab-final-cta">Starter wählen &amp; Preis prüfen (ab €89)</a>
+        <a class="btn btn-ghost" href="#offer-plus" data-analytics="cta-primary" data-cta-name="final_primary_plus" id="final-plus-choice">Plus wählen &amp; Preis prüfen (ab €149)</a>
+      </div>
+      <p class="final-micro" id="final-cta-micro">Direkt zur passenden Variante springen und Inhalte/Preis vor dem finalen Schritt prüfen.</p>
       <ul class="final-assurance" aria-label="Sicherheits- und Transparenzhinweise vor dem Angebotsklick">
         <li>Kein Abo-Modell</li>
         <li>Preis transparent vor Checkout</li>
@@ -296,7 +542,23 @@
     </section>
   </main>
 
-  <a class="mobile-sticky-cta btn btn-primary" href="#offer" data-analytics="cta-primary" data-cta-name="mobile_sticky" id="ab-mobile-cta">Starter & Plus vergleichen</a>
+  <div class="mobile-sticky-chooser" aria-label="Schnellwahl mit klarem Standardpfad">
+    <p>Dein 30-Tage-Start (Kein Abo):</p>
+    <div class="mobile-sticky-actions">
+      <a class="mobile-sticky-cta btn btn-primary" href="#offer-starter" data-analytics="cta-primary" data-cta-name="mobile_sticky_starter" data-plan-intent="starter" id="ab-mobile-cta">Starter Paket wählen (ab €89) <span>30 Tage Vorrat · Einzelkauf</span></a>
+    </div>
+    <p class="mobile-sticky-alt-path">Lieber 60 Tage? <a href="#offer-plus" data-analytics="cta-primary" data-cta-name="mobile_sticky_plus" data-plan-intent="plus">Zu Plus (ab €149) →</a></p>
+    <p class="mobile-sticky-trust">Preis vor Checkout sichtbar · Plus spart ca. €0,49/Tag vs. Starter · <a href="#offer-objection-faq" data-analytics="cta-secondary" data-cta-name="mobile_sticky_faq">3 kurze Antworten →</a></p>
+  </div>
+
+  <div class="desktop-sticky-chooser" aria-label="Desktop Schnellwahl Starter oder Plus">
+    <p class="desktop-sticky-title">Wähle deinen Start (Kein Abo):</p>
+    <div class="desktop-sticky-actions">
+      <a class="btn btn-primary" href="#offer-starter" data-analytics="cta-primary" data-cta-name="desktop_sticky_starter" data-plan-intent="starter">Starter Paket wählen (ab €89) <span>30 Tage · Einzelkauf</span></a>
+      <a class="btn btn-ghost" href="#offer-plus" data-analytics="cta-primary" data-cta-name="desktop_sticky_plus" data-plan-intent="plus">Plus Paket wählen (ab €149) <span>60 Tage · Einzelkauf</span></a>
+    </div>
+    <p class="desktop-sticky-note">Unsicher? Starte mit dem 30-Tage-Starter ohne Abo-Bindung · Preis und Inhalte vor finaler Bestätigung sichtbar · <a href="#offer-objection-faq" data-analytics="cta-secondary" data-cta-name="desktop_sticky_faq">3 kurze Antworten →</a></p>
+  </div>
 
   <script src="./script.js"></script>
 </body>

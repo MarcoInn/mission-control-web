@@ -1,51 +1,104 @@
-<svg width="1400" height="900" viewBox="0 0 1400 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="1400" height="900" viewBox="0 0 1400 900" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg" x1="120" y1="80" x2="1220" y2="820" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#F8F3EA"/>
-      <stop offset="0.55" stop-color="#E9DECD"/>
-      <stop offset="1" stop-color="#D9C8B1"/>
+    <!-- Background Gradient: Warm, premium studio lighting -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FDFBF7"/>
+      <stop offset="100%" stop-color="#E8E0D5"/>
     </linearGradient>
-    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1080 240) rotate(130) scale(520 380)">
-      <stop stop-color="#FFF9EE" stop-opacity="0.95"/>
-      <stop offset="1" stop-color="#FFF9EE" stop-opacity="0"/>
-    </radialGradient>
-    <filter id="blur" x="0" y="0" width="1400" height="900" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feGaussianBlur stdDeviation="30"/>
+    
+    <!-- Shadow: Soft, realistic drop shadow -->
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="15"/>
+      <feOffset dx="0" dy="20" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3"/>
+      </feComponentTransfer>
+      <feMerge> 
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/> 
+      </feMerge>
     </filter>
-    <filter id="shadow" x="450" y="120" width="720" height="700" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feDropShadow dx="0" dy="28" stdDeviation="26" flood-color="#1D312A" flood-opacity="0.28"/>
-    </filter>
-    <linearGradient id="jar" x1="0" y1="0" x2="0" y2="1">
-      <stop stop-color="#22443B"/>
-      <stop offset="1" stop-color="#132A24"/>
+
+    <!-- Glass Material: Dark Amber -->
+    <linearGradient id="glass" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2F1B0C"/> <!-- Darkest edge -->
+      <stop offset="20%" stop-color="#5C3A21"/> <!-- Highlight -->
+      <stop offset="50%" stop-color="#3E2716"/> <!-- Midtone -->
+      <stop offset="85%" stop-color="#2F1B0C"/> <!-- Dark edge -->
     </linearGradient>
-    <linearGradient id="label" x1="0" y1="0" x2="1" y2="1">
-      <stop stop-color="#EDE2D2"/>
-      <stop offset="1" stop-color="#CBB89D"/>
+
+    <!-- Label Material: Matte Cream Paper -->
+    <linearGradient id="label" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F2EBE0"/>
+      <stop offset="15%" stop-color="#FFF9F0"/> <!-- Highlight -->
+      <stop offset="50%" stop-color="#F2EBE0"/> <!-- Midtone -->
+      <stop offset="85%" stop-color="#E6DCCF"/> <!-- Shadow edge -->
+    </linearGradient>
+
+    <!-- Cap Material: Matte Black/Dark Green -->
+    <linearGradient id="cap" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1A2E26"/>
+      <stop offset="15%" stop-color="#2C4A3E"/>
+      <stop offset="50%" stop-color="#1A2E26"/>
+      <stop offset="90%" stop-color="#0F1C17"/>
+    </linearGradient>
+
+    <!-- Gold Foil Effect -->
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C5A065"/>
+      <stop offset="25%" stop-color="#E6CFA3"/>
+      <stop offset="50%" stop-color="#C5A065"/>
+      <stop offset="75%" stop-color="#9E7D48"/>
+      <stop offset="100%" stop-color="#C5A065"/>
     </linearGradient>
   </defs>
-  <rect width="1400" height="900" rx="34" fill="url(#bg)"/>
-  <g opacity="0.55" filter="url(#blur)">
-    <ellipse cx="270" cy="760" rx="280" ry="130" fill="#D7C4A8"/>
-    <ellipse cx="1120" cy="730" rx="320" ry="140" fill="#CDB595"/>
-  </g>
-  <rect x="60" y="70" width="1280" height="760" rx="36" fill="url(#glow)" opacity="0.95"/>
-  <g filter="url(#shadow)">
-    <rect x="720" y="185" width="330" height="500" rx="56" fill="url(#jar)"/>
-    <rect x="756" y="322" width="258" height="222" rx="18" fill="url(#label)"/>
-    <rect x="788" y="370" width="110" height="8" rx="4" fill="#2D4E43" fill-opacity="0.78"/>
-    <rect x="788" y="394" width="175" height="7" rx="3.5" fill="#3A5D52" fill-opacity="0.75"/>
-    <rect x="788" y="416" width="144" height="7" rx="3.5" fill="#3A5D52" fill-opacity="0.56"/>
-    <rect x="706" y="147" width="356" height="66" rx="28" fill="#1A352D"/>
-    <rect x="740" y="206" width="290" height="12" rx="6" fill="#7AA18F" fill-opacity="0.34"/>
-  </g>
-  <g opacity="0.9">
-    <path d="M154 620C248 570 352 590 428 656" stroke="#25463D" stroke-opacity="0.32" stroke-width="5" stroke-linecap="round"/>
-    <path d="M164 658C240 624 310 628 374 674" stroke="#3E6257" stroke-opacity="0.3" stroke-width="4" stroke-linecap="round"/>
-    <ellipse cx="295" cy="684" rx="176" ry="38" fill="#2A4B40" fill-opacity="0.18"/>
-  </g>
-  <g>
-    <circle cx="1060" cy="220" r="122" fill="#F3E6D6" fill-opacity="0.7"/>
-    <circle cx="1060" cy="220" r="86" fill="#F7EFE2" fill-opacity="0.75"/>
+
+  <!-- Background -->
+  <rect width="1400" height="900" fill="url(#bg)"/>
+
+  <!-- Product Container (Centered) -->
+  <g transform="translate(700, 450)">
+    
+    <!-- Shadow Base -->
+    <ellipse cx="0" cy="280" rx="160" ry="40" fill="#000" opacity="0.15" filter="url(#shadow)"/>
+
+    <!-- Jar Body (Amber Glass) -->
+    <rect x="-130" y="-200" width="260" height="460" rx="20" fill="url(#glass)"/>
+    
+    <!-- Inner Glass Glow (Liquid Level hint) -->
+    <rect x="-120" y="-140" width="240" height="380" rx="15" fill="#7A4E2C" opacity="0.1"/>
+
+    <!-- Label Wrap -->
+    <rect x="-132" y="-80" width="264" height="260" rx="5" fill="url(#label)"/>
+    
+    <!-- Label Details -->
+    <!-- Brand Logo Area -->
+    <rect x="-60" y="-40" width="120" height="30" fill="#1A2E26"/>
+    <text x="0" y="-20" font-family="serif" font-size="18" fill="#F2EBE0" text-anchor="middle" letter-spacing="2">AURANEM</text>
+    
+    <!-- Product Name -->
+    <text x="0" y="20" font-family="sans-serif" font-weight="bold" font-size="28" fill="#1A2E26" text-anchor="middle" letter-spacing="1">DAILY BALANCE</text>
+    <text x="0" y="50" font-family="sans-serif" font-size="14" fill="#666" text-anchor="middle" letter-spacing="0.5">ROUTINE COMPLEX</text>
+    
+    <!-- Gold Line -->
+    <rect x="-40" y="70" width="80" height="2" fill="url(#gold)"/>
+
+    <!-- Supplement Facts / Minimal Text -->
+    <rect x="-90" y="100" width="180" height="4" fill="#E0D6C8" rx="2"/>
+    <rect x="-90" y="115" width="140" height="4" fill="#E0D6C8" rx="2"/>
+    <rect x="-90" y="130" width="160" height="4" fill="#E0D6C8" rx="2"/>
+
+    <!-- Cap -->
+    <rect x="-135" y="-240" width="270" height="60" rx="5" fill="url(#cap)"/>
+    <!-- Cap Detail lines -->
+    <rect x="-135" y="-230" width="270" height="2" fill="#FFFFFF" opacity="0.1"/>
+    <rect x="-135" y="-200" width="270" height="2" fill="#000000" opacity="0.2"/>
+
+    <!-- Reflections / Highlights -->
+    <path d="M-130 -200 Q -160 0 -130 260 L -100 260 Q -130 0 -100 -200 Z" fill="#FFFFFF" opacity="0.05"/>
+    <path d="M100 -200 Q 130 0 100 260 L 130 260 Q 160 0 130 -200 Z" fill="#FFFFFF" opacity="0.03"/>
+    
+    <!-- Cap Highlight -->
+    <rect x="-100" y="-240" width="40" height="60" fill="#FFFFFF" opacity="0.05"/>
   </g>
 </svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 650" role="img" aria-labelledby="t d">
+<title id="t">Trust transparency board</title><desc id="d">Board showing batch ID, ingredient transparency and compliant communication.</desc>
+<rect width="1400" height="650" fill="#f4eee2"/>
+<rect x="90" y="70" width="1220" height="510" rx="30" fill="#fbf8f1" stroke="#d8c9ad" stroke-width="4"/>
+<text x="150" y="150" font-family="Cormorant Garamond, serif" font-size="56" fill="#473a2c">Transparency Board</text>
+
+<g font-family="Manrope" fill="#534531">
+  <rect x="140" y="190" width="360" height="160" rx="18" fill="#efe6d5"/>
+  <text x="170" y="238" font-size="22" font-weight="700">Chargen-ID</text>
+  <text x="170" y="275" font-size="18">Lot: AU-26-03-DB</text>
+  <text x="170" y="307" font-size="18">MHD: 2028-03</text>
+
+  <rect x="520" y="190" width="360" height="160" rx="18" fill="#efe6d5"/>
+  <text x="550" y="238" font-size="22" font-weight="700">Klare Anwendung</text>
+  <text x="550" y="275" font-size="18">Tagesfenster + Verzehrempfehlung</text>
+  <text x="550" y="307" font-size="18">ohne Überinterpretation</text>
+
+  <rect x="900" y="190" width="360" height="160" rx="18" fill="#efe6d5"/>
+  <text x="930" y="238" font-size="22" font-weight="700">Kommunikation</text>
+  <text x="930" y="275" font-size="18">Keine Heil-/Krankheitsclaims</text>
+  <text x="930" y="307" font-size="18">Fokus auf Routine & Klarheit</text>
+</g>
+
+<rect x="140" y="390" width="1120" height="140" rx="18" fill="#e7ddc8"/>
+<text x="700" y="455" text-anchor="middle" font-family="Manrope" font-size="28" fill="#4f4231">Schnell geprüft, sicher entschieden, sauber kommuniziert.</text>
+</svg>

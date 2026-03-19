@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 700" role="img" aria-labelledby="t d">
+<title id="t">Starter offer visual with 3-step overlay</title><desc id="d">Starter product with clear three-step routine cards.</desc>
+<rect width="1100" height="700" fill="#f4eee1"/>
+<rect x="60" y="80" width="460" height="540" rx="30" fill="#e8deca"/>
+<rect x="110" y="145" width="360" height="430" rx="22" fill="#f8f3e8" stroke="#d7c8ac" stroke-width="3"/>
+<text x="290" y="220" text-anchor="middle" font-family="Manrope" font-size="34" letter-spacing="3" fill="#584a37">AURANEM</text>
+<text x="290" y="262" text-anchor="middle" font-family="Manrope" font-size="20" fill="#7f6f57">STARTER · 30 TAGE</text>
+<rect x="170" y="320" width="240" height="26" rx="13" fill="#ccba95"/>
+<rect x="170" y="364" width="240" height="26" rx="13" fill="#ccba95"/>
+<rect x="170" y="408" width="240" height="26" rx="13" fill="#ccba95"/>
+
+<g font-family="Manrope" fill="#4b3f2f">
+  <rect x="580" y="120" width="460" height="140" rx="22" fill="#fbf8f0"/>
+  <circle cx="635" cy="190" r="24" fill="#c7b692"/><text x="635" y="197" text-anchor="middle" font-size="18" fill="#fff">1</text>
+  <text x="680" y="186" font-size="28" font-weight="700">Setup wählen</text>
+  <text x="680" y="215" font-size="18" fill="#6f614d">Starter aktivieren und Tagesfenster festlegen.</text>
+
+  <rect x="580" y="280" width="460" height="140" rx="22" fill="#fbf8f0"/>
+  <circle cx="635" cy="350" r="24" fill="#c7b692"/><text x="635" y="357" text-anchor="middle" font-size="18" fill="#fff">2</text>
+  <text x="680" y="346" font-size="28" font-weight="700">Morgenanker</text>
+  <text x="680" y="375" font-size="18" fill="#6f614d">Mit Frühstück koppeln statt spontan erinnern.</text>
+
+  <rect x="580" y="440" width="460" height="140" rx="22" fill="#fbf8f0"/>
+  <circle cx="635" cy="510" r="24" fill="#c7b692"/><text x="635" y="517" text-anchor="middle" font-size="18" fill="#fff">3</text>
+  <text x="680" y="506" font-size="28" font-weight="700">30 Tage halten</text>
+  <text x="680" y="535" font-size="18" fill="#6f614d">Wöchentliche Checkpoints für Konstanz.</text>
+</g>
+</svg>
